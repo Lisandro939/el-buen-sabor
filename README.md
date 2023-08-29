@@ -1,4 +1,4 @@
-![Logo of the page](https://github.com/Lisandro939/el-buen-sabor/blob/main/Logo.jpeg)
+![Logo of the page](https://github.com/Lisandro939/el-buen-sabor/blob/main/Logo%20(1).jpeg)
 # Buen sabor
 
 Temática del sitio: Delivery de comida rápida.
