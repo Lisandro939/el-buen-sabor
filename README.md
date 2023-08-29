@@ -8,10 +8,10 @@ El delivery de comidas de la ciudad "El Buen Sabor" ofrece a sus clientes una am
 
 ## Integrantes del grupo
 
-Benvenutti, Luciana.
-Carcaño, Nicolas.
-Espinola, Facundo.
-Ferreyra, Paula.
-Fernandez, Lisandro.
-Manuel, Francisco.
-Neufel, Tomas.
+Benvenutti, Luciana.  
+Carcaño, Nicolas.  
+Espinola, Facundo.  
+Ferreyra, Paula.  
+Fernandez, Lisandro.  
+Manuel, Francisco.  
+Neufel, Tomas.  
