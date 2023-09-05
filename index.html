@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  type="text/css" rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
     <title>El buen sabor</title>
 </head>
 <body>
@@ -33,17 +32,34 @@
         </div>
         <img src="assets/tabla-asado.png" />
     </section>
-    <div id="miModal" class="modal">
+
+    <div id="miModal" class="modal">   
         <div class="modalContenido">
-            <span class="cerrar" id="cerrarModal">&times;</span>
             <div class="buttonsLogin">
                 <button>Ingresar</button>
-                <button>Registarse</button>
+                <button>Registrar</button>
             </div>
-            <h2>Modal Ejemplo</h2>
-            <p>Este es un modal de ejemplo.</p>
+            <div class="buttonGoogle">
+                <button class="buttonsGray">
+                    <img src="assets/google logo.svg" width="20px" height="20px">
+                    Google
+                </button>
+                <p>o registrarse con tus datos</p>
+            </div>
+            <div class="inputsContainer">
+                <input type="text" placeholder="Nombre"/>
+                <input type="text" placeholder="Apellido"/>
+                <input type="text" placeholder="Direccion"/>
+                <input type="number" placeholder="Telefono"/>
+                <input type="password" placeholder="Contraseña"/>
+                <input type="password" placeholder="Confirmar Contraseña"/>
+            </div>
+            <div class="buttonRegisterContainer">
+                <button id="RegistrarseButton" class="buttonClasic">Registrarme</button>
+            </div>
         </div>
     </div>
+
     <div class="categoriesSection">
         <p>CATEGORÍAS</p>
         <div class="buttonsContainer">
@@ -192,6 +208,6 @@
             <a style="color: #7D1F2F;">BOOOCA BOCA BOCAA</a>
         </section>
     </footer>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
