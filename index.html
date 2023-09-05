@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  type="text/css" rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title>El buen sabor</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
                 <input type="text" />
                 <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
             </div>
-            <button>
+            <button id="abrirModal">
                 <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
             </button>
             <button class="cart">
@@ -32,6 +33,17 @@
         </div>
         <img src="assets/tabla-asado.png" />
     </section>
+    <div id="miModal" class="modal">
+        <div class="modalContenido">
+            <span class="cerrar" id="cerrarModal">&times;</span>
+            <div class="buttonsLogin">
+                <button>Ingresar</button>
+                <button>Registarse</button>
+            </div>
+            <h2>Modal Ejemplo</h2>
+            <p>Este es un modal de ejemplo.</p>
+        </div>
+    </div>
     <div class="categoriesSection">
         <p>CATEGORÍAS</p>
         <div class="buttonsContainer">
@@ -180,5 +192,6 @@
             <a style="color: #7D1F2F;">BOOOCA BOCA BOCAA</a>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
