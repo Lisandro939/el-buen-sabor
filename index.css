@@ -8,6 +8,11 @@ body {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* -------------------- HEADER --------------------*/
 
 header {
