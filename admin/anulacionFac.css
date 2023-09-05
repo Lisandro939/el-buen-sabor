@@ -1,11 +1,120 @@
+*{
+    margin: 0px;
+    font-family: 'system-ui', sans-serif;
+    overflow-x: hidden;
+}
 /*HEADER*/
+header {
+    top: 0px;
+    left: 0px;
+    height: 180px;
+    width: 100vw; 
+    display: flex;
+    flex-direction: row;
+    background-color: #811628;
+}
+
+.logoHeader {
+    height: 180px;
+    width: 230px;
+    margin-left: 100px;
+    padding-top: 0px;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
 
 
+/*CONTENEDOR*/
+.contenedor{
+    height: 100%;
+    color: black;
+    padding: 50px 100px;
+}
+
+.contenedor2 {
+    display: flex;
+    gap: 20px; 
+    padding: 25px 0px;
+    
+  }
+  
+  .textInput1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding-right: 50px;
+    }
+
+.textInput2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding-right: 50px;
+}
 
 
+.input{
+    border-radius: 8px;
+    border: 1px solid rgb(202, 195, 195);
+    background-color: rgb(240, 238, 238);
+    width: 160px;
+    text-align: center;
+}
 
+.comprobante{
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 10px;
+    padding-top: 20px;
 
+}
 
+.contenedor3 {
+    display: flex;
+  }
+  
+  .textInput3 {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding-top: 20px;
+  }
+  
+  .textInput3 > div {
+    margin-right: 20px;
+  }
+  
+.textoP{
+    padding-bottom: 15px;
+}
+
+.botonC{
+    display: flex;
+    justify-content: end;
+}
+
+.botonConfirmar{
+    margin-top: 30px;
+    background-color: #E1950D;
+    border-radius: 15px;
+    border: 1px solid #E1950D;
+    padding: 5px 15px;
+    color: white;
+}
+
+.botonConfirmar:hover{
+    color: #E1950D;
+    background-color: #7D1F2F;
+    border: 1px solid #E1950D;
+}
 
 /*FOOTER*/
 footer {

@@ -7,7 +7,79 @@
     <title>El buen sabor</title>
 </head>
 <body>
-    
+    <header>
+        <div class="nav">
+        <img id="logoHeader" class="logoHeader" src="/assets/logoBuenSabor-Naranja.png"/>
+            <button id="abrirModal">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
+            </button>
+        </div>
+    </header>
+
+
+<section class="contenedor">
+    <h3>Anulación de factura</h3>
+        <section class="contenedor2">
+            <div class="textInput1">
+                <p>Fecha de emisión de factura</p>
+                <p>Número de documento</p>
+                <p>Condición frente a IVA</p>
+                
+                <p>Condición de venta</p>
+            </div>
+            <div class="textInput2">
+                <input class="input" type="date">
+                <input class="input" type="number">
+                <select class="input" id="seleccionarOpcion" name="opcion">
+                    <option value="" disabled selected hidden>Seleccione una opción</option>
+                    <option value="opcion1">Responsable inscripto</option>
+                    <option value="opcion2">Responsable no inscripto</option>
+                    <option value="opcion2">Consumidor final</option>
+                </select>
+                <select class="input" id="seleccionarOpcion" name="opcion">
+                    <option value="" disabled selected hidden>Seleccione una opción</option>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                </select>
+            </div>
+        </section>
+        <div class="comprobante">
+        <p style="font-size: 17px;">Comprobante asociado</p>
+        <section class="contenedor3">
+            <div class="textInput3">
+                <div>
+                    <p class="textoP">Tipo de comprobante</p>
+                    <select class="input" id="seleccionarOpcion" name="opcion">
+                        <option value="" disabled selected hidden>Seleccione una opción</option>
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="textoP">Punto de venta</p>
+                    <select class="input" id="seleccionarOpcion" name="opcion">
+                        <option value="" disabled selected hidden>Seleccione una opción</option>
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="textoP">Número de comprobante</p>
+                    <input class="input" type="number">
+                </div>
+                <div>
+                    <p class="textoP">Fecha de emisión</p>
+                    <input class="input" type="date">
+                </div>
+            </div>
+        </section>
+        </div>
+        <div class="botonC">
+            <button class="botonConfirmar">Confirmar</button>
+        </div>
+        
+        
+</section>
 
 
 <footer>
