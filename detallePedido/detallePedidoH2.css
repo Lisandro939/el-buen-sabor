@@ -1,10 +1,12 @@
-*{
-    font-family: 'system-ui', sans-serif;
+html {
     overflow-x: hidden;
+    margin: auto;
 }
 
-body{
-    margin: auto;
+body {
+    margin: 0px;
+    font-family: 'system-ui', sans-serif;
+    position: relative;
 }
 
 header {
@@ -80,64 +82,150 @@ header {
     text-align: center;
 }
 
-/*SECTION PRINCIPAL*/
 
-.titulo{
-    padding-top: 100px;
-    color: black;
-    text-align: center;
-}
 
-.contenedor{
-    background-color: white;
-    padding: 50px 100px;
-    text-align: center;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-}
+/** -------------------- DETAIL SECTION --------------------*/
 
-.detalles{
-    background-color: #81162837;
-    padding: 30px;
-    display: inline-block;
-    justify-content: space-between;
-    border-radius: 15px;
-    width: 50vw;
-}
-
-.producto{
+.detallePedido{
+    padding: 160px 0px 60px 92px;
     display: flex;
     flex-direction: row;
-    padding: 20px;
     align-items: center;
-    justify-content: space-between;
-}
-.prod{
-    padding: 20px 0px;
-}
+    gap: 40px;
+    width: 80vw;
 
-.prod1{
-    width: 20vw;
-    text-align: start;
-}
-
-.detalle2{
-    background-color: #D9D9D9;
-    padding: 20px;
-    border-radius: 15px;
-    height: 100%;
-    text-align: start;
 }
 
 .imageDetail{
-    width: 230px;
-    height: 150px;
+    width: 370px;
+    height: 250px;
     border-radius: 10px;
 }
 
-/*BOTONES*/
+.cardDetail{
+    width: 100%;
+    height: 100%;
+}
+
+.cardBotones{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.botonAgregar{
+    border-radius: 15px;
+    padding: 0px 60px;
+    background-color: #E1950D;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.botonAgregar:hover{
+    background-color: #811628;
+}
+
+.botonPlus{
+    border-radius: 15px;
+    padding: 0px 20px;
+    background-color: #7D1F2F;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    height: 30px;
+}
+
+/** -------------------- CARDS SECTION --------------------*/
+.cards{
+    width: 100%;
+    height: 500px;
+    background-color: #45000C;
+}
+
+.titCards{
+    padding-top: 40px;
+    padding-left: 92px;
+    color: white;
+}
+
+.cardsSection {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(1, 375px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 20px 92px;
+}
+
+.card {
+    width: 240px;
+    height: 320px;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.75);
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 50%;
+    padding: 0px 10px 0px 10px;
+}
+
+.cardText h2 {
+    font-size: 23px;
+    margin: 0px;
+}
+
+.cardText p {
+    font-size: 14px;
+    margin: 0px;
+}
+
+.cardPrice {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cardPrice p {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.price {
+    color: #7D1F2F;
+}
+
+.stock {
+    color: #D90000;
+}
+
+
+
 
 .botonNav{
     background: none;
@@ -148,46 +236,6 @@ header {
     display: inline-block; /* Hace que el botón se ajuste al contenido */
     line-height: 1; /* Elimina cualquier espacio vertical adicional */
 }
-
-.botones{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    justify-content: space-between;
-}
-
-.boton1{
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #E1950D;
-    color: white;
-    border: 0px;
-    margin-bottom: 8px;
-    cursor: pointer;
-}
-
-.boton1:hover{
-    background-color: #811628;
-}
-
-.boton2{
-    border-radius: 15px;
-    padding: 5px 15px;
-    background-color: #7D1F2F;
-    color: white;
-    border: 0px;
-    cursor: pointer;
-}
-
-.icon-button {
-    background: none;
-    border: none;
-    font-size: 24px; /* Ajusta el tamaño del icono según tus necesidades */
-    cursor: pointer;
-    padding: 0; /* Elimina cualquier relleno adicional */
-    display: inline-block; /* Hace que el botón se ajuste al contenido */
-    line-height: 1; /* Elimina cualquier espacio vertical adicional */
-  }
 
 /*FOOTER*/
 
