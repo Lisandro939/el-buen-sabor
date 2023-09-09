@@ -89,6 +89,7 @@ table {
     section {
         overflow-x: scroll;
         width: 100vw;
+        align-items: start;
     }
 }
 table tr {
