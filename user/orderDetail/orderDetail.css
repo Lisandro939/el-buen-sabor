@@ -1,9 +1,12 @@
-*{
-    font-family: 'system-ui', sans-serif;
+html {
+    overflow-x: hidden;
+    margin: auto;
 }
 
-body{
-    margin: auto;
+body {
+    margin: 0px;
+    font-family: 'system-ui', sans-serif;
+    position: relative;
 }
 
 header {
@@ -89,7 +92,7 @@ header {
 
 .contenedor{
     background-color: white;
-    padding: 50px;
+    padding: 50px 100px;
     text-align: center;
     flex-direction: row;
     display: flex;
@@ -99,10 +102,11 @@ header {
 
 .detalles{
     background-color: #81162837;
-    padding: 20px;
+    padding: 30px;
     display: inline-block;
     justify-content: space-between;
     border-radius: 15px;
+    width: 50vw;
 }
 
 .producto{
@@ -113,8 +117,7 @@ header {
     justify-content: space-between;
 }
 .prod{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px 0px;
 }
 
 .prod1{
@@ -126,8 +129,14 @@ header {
     background-color: #D9D9D9;
     padding: 20px;
     border-radius: 15px;
-    display: inline-block;
+    height: 100%;
     text-align: start;
+}
+
+.imageDetail{
+    width: 230px;
+    height: 150px;
+    border-radius: 10px;
 }
 
 /*BOTONES*/
@@ -164,8 +173,8 @@ header {
 }
 
 .boton2{
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 15px;
+    padding: 5px 15px;
     background-color: #7D1F2F;
     color: white;
     border: 0px;
