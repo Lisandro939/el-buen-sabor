@@ -1,0 +1,199 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+    font-family: 'system-ui', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* reset button styles*/
+
+button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+/*-------------------- HEADER --------------------*/
+
+header {
+    background-color: #7D1F2F;
+    position: relative;
+    width: 100vw;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+header .center {
+    position: absolute;
+    top: -12px;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: white;
+}
+
+@media screen and (width < 1200px) {
+    header .center {
+        left: 30%;
+    }
+}
+
+.center h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+/*---------------- MIDDLE SECTION ----------------*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+section label {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #7D1F2F;
+}
+
+.firstBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+}
+
+.firstBox label {
+    padding: 10px 0px;
+}
+
+.firstBoxIn {
+    width: 50vw;
+    max-width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.secondBox {
+    width: 50vw;
+}
+
+.secondBox table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    border-radius: 10px;
+}
+table th {
+    padding:5px;
+    background: #dcdcdc;
+    color: #313030;
+}
+table th:first-child {
+    border-radius: 10px 0px 0px 10px;
+}
+table th:last-child {
+    border-radius: 0px 10px 10px 0px;
+}
+table td {
+    text-align:center;
+    padding:15px 5px;
+    background: #ffffff;
+    color: #000000;
+    
+}
+table tbody tr {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.backButton {
+    background-color: #E1950D;
+    padding: 8px 32px;
+    border-radius: 100px;
+    -webkit-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+    -moz-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+    box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+}
+.backButton:hover {
+    background-color: #E1950D;
+    padding: 8px 32px;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(62, 62, 62, 0.5);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+    box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+}
+/*-------------------- FOOTER --------------------*/
+
+footer {
+    width: 100vw;
+    height: 200px;
+    background-color: #7D1F2F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 50px;
+    color: white;
+}
+
+footer img {
+    width: 200px;
+    height: 188px;
+    cursor: pointer;
+}
+
+footer section {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer section a {
+    margin-bottom: 10px;
+}
+
+@media screen and (width < 1200px) {
+    footer {
+        flex-direction: column;
+        height: 100%;
+        width: 100vw;
+        padding: 0px;
+    }
+
+    footer section {
+        width: 70%;
+        align-items: center;
+    }
+}

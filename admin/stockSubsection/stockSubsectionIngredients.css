@@ -1,0 +1,38 @@
+/*---------------- MIDDLE SECTION ----------------*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.preTable {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.preTable h2 {
+    margin: 10px 0px;
+}
+
+.preTable select {
+    width: 150px;
+}
+
+.registerShop {
+    background-color: #E1950D;
+    padding: 4px 12px;
+    border-radius: 10px;
+}
+
+.new {
+    background-color: #03fa14;
+    padding: 4px 12px;
+    border-radius: 10px;
+}
