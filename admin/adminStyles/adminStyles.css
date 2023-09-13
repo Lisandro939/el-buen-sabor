@@ -1,0 +1,64 @@
+/*-------------------- HEADER --------------------*/
+
+.secondHeader {
+    background-color: #7D1F2F;
+    position: relative;
+    width: 100vw;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.secondHeader .logoAndTextAdmin {
+    position: absolute;
+    top: -12px;
+    left: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: white;
+}
+
+.secondHeader .logoAndTextAdmin h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+@media screen and (width < 1200px) {
+    header .center {
+        left: 30%;
+    }
+}
+
+.center h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+/*------------------ SUBHEADER -------------------*/
+
+.subHeader {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    border-bottom: 10px solid black;
+}
+
+.subHeader button {
+    width: 15%;
+    font-size: 30px;
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+}
+
+.subHeader button svg {
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+}
