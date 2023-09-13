@@ -1,0 +1,325 @@
+*{
+    font-family: 'system-ui', sans-serif;
+}
+/*-------------------- HEADER --------------------*/
+
+.secondHeader {
+    background-color: #7D1F2F;
+    position: relative;
+    width: 100vw;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.secondHeader .logoAndTextAdmin {
+    position: absolute;
+    top: -12px;
+    left: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: white;
+}
+
+.secondHeader .logoAndTextAdmin h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+@media screen and (width < 1200px) {
+    header .center {
+        left: 30%;
+    }
+}
+
+.center h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+/*------------------ SUBHEADER -------------------*/
+
+.subHeader {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    border-bottom: 10px solid black;
+}
+
+.subHeader button {
+    width: 15%;
+    font-size: 30px;
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+}
+
+.subHeader button svg {
+    position: absolute;
+    bottom: -10px;
+    left: 40%;
+}
+.barra-de-seleccion{
+    padding: 28px 48px 28px 48px;
+    width: 100vw;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 48px;
+    border-bottom: 3px solid black;
+}
+
+.barra-de-seleccion h3{
+   font-size: 22px;
+   font-weight: 550;
+}
+body{
+    margin: auto;
+}
+
+.inputConteiner{
+    display: flex;
+    flex-direction:row-reverse;
+    width: 80vw;
+}
+
+
+.input {
+    position: relative;
+    color: black;
+   
+}
+
+.input input {
+    width: 290px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+    }
+
+    
+.input i {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    z-index: 99;
+    color: black;
+}
+
+.user {
+    color: white;
+}
+
+/*SECTION PRINCIPAL*/
+
+.titulo{
+    padding-top: 100px;
+    color: black;
+    text-align: center;
+}
+
+.contenedor{
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 80vw;
+}
+.cabezaTabla{
+    background-color: grey;
+    border-radius: 25px;
+}
+
+.cabezaTabla tr{
+    background-color: grey;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+table {
+    width:100%;
+    border:0px solid #b3adad;
+    border-collapse:collapse;
+    padding:5px;
+}
+table th {
+    border:0px solid #b3adad;
+    padding:5px;
+    background: #f0f0f0;
+    color: #313030;
+}
+table td {
+    border:0px solid #b3adad;
+    text-align:center;
+    padding:5px;
+    background: #ffffff;
+    color: #313030;
+}
+
+.barra-de-seleccion{
+    padding: 28px 48px 28px 48px;
+    width: 100vw;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 48px;
+    border-bottom: 3px solid black;
+}
+
+.barra-de-seleccion h3{
+    font-size: 22px;
+    font-weight: 550;
+ }
+
+
+/*BOTONES*/
+
+.botonNav{
+    background: none;
+    border: none;
+    font-size: 24px; /* Ajusta el tamaño del icono según tus necesidades */
+    cursor: pointer;
+    padding: 0; /* Elimina cualquier relleno adicional */
+    display: inline-block; /* Hace que el botón se ajuste al contenido */
+    line-height: 1; /* Elimina cualquier espacio vertical adicional */
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.boton1{
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: #E1950D;
+    color: black;
+    border: 0px;
+    cursor: pointer;
+}
+
+.boton2{
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: #FBFF2B;
+    color: black;
+    border: 0px;
+    cursor: pointer;
+}
+
+.boton3{
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: #46FF36;
+    color: black;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+
+.icon-button {
+    background: none;
+    border: none;
+    font-size: 24px; /* Ajusta el tamaño del icono según tus necesidades */
+    cursor: pointer;
+    padding: 0; /* Elimina cualquier relleno adicional */
+    display: inline-block; /* Hace que el botón se ajuste al contenido */
+    line-height: 1; /* Elimina cualquier espacio vertical adicional */
+  }
+
+/*FOOTER*/
+
+footer {
+    margin: auto;
+    height: 200px;
+    background-color: #7D1F2F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 50px;
+    color: white;
+}
+
+footer img {
+    width: 200px;
+    height: 188px;
+    cursor: pointer;
+}
+
+footer section {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer section a {
+    margin-bottom: 10px;
+}
+
+table {
+    border-spacing: 23.5px; /* Ajusta el valor según tus preferencias */
+}
+
+tr {
+    margin-bottom: 100px; /* Ajusta el valor según tus preferencias */
+}
+
+th {
+    background-color: #ee030300; /* Cambia el color de fondo según tus preferencias */
+    color: black; /* Cambia el color del texto si es necesario */
+    padding: 10px; /* Añade espacio alrededor del contenido del th si es necesario */
+}
+ 
+
+
+/* Pedidos
+color: #220114;
+font-size: 32px;
+font-family: Roboto;
+font-weight: 500;
+line-height: 38.40px;
+word-wrap: break-word
+---
+// Stock
+color: #220114;
+font-size: 32px;
+font-family: Roboto;
+font-weight: 500;
+line-height: 38.40px;
+word-wrap: break-word
+---
+// Rubros
+color: #220114;
+font-size: 32px;
+font-family: Roboto;
+font-weight: 500;
+line-height: 38.40px;
+word-wrap: break-word
