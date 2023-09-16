@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./productDetail.css">
-
+    <link rel="stylesheet" href="./shoppingCart.css">
     <title>El buen sabor</title>
 </head>
 <body>
@@ -257,107 +256,113 @@
         </div>
     </div>
 
-<section class="detallePedido">
-    <div class="cardImage">
-        <img class="imageDetail" src="/assets/asado.webp" alt="">
-    </div>
-    <div class="CardDetail">
-        <h2>Asado</h2>
-        <p>Esta es una descripción del producto que se está mostrando,<br>
-            pueden ir los ingredientes o lo que sea.</p>
-        <p><strong>Precio $10000</strong></p>
-        <p>Disponible</p>
-        <div class="cardBotones">
-            <button class="botonPlus">- 1 +</button>
-            <p>$10000</p>
-            <a href="../shoppingCart/shoppingCart.html" class="botonAgregar">Agregar al Carrito</a>
+
+    <section class="carritoCompras">
+        <h1>CARRITO DE COMPRAS</h1>
+        <div class="carritoSection">
+            <div class="carritoProductos">
+                <div class="producto">
+                    <img src="/assets/asado.webp" width="320px" height="200px"/>
+                    <div class="info">
+                        <h4>
+                            Asado
+                        </h4>
+                        <p>
+                            Esta es una descripción del producto que se está mostrando,
+                            pueden ir los ingredientes o lo que sea
+                        </p>
+                        <p>
+                            Precio: $10.000
+                        </p>
+                    </div>
+                    <div class="thirdSection">
+                        <button class="botonPlus">- 1 +</button>
+                        <p>$10.000</p>
+                        <p class="x">X</p>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="/assets/locro.jpg" width="320px" height="200px"/>
+                    <div class="info">
+                        <h4>
+                            Locro
+                        </h4>
+                        <p>
+                            Esta es una descripción del producto que se está mostrando,
+                            pueden ir los ingredientes o lo que sea
+                        </p>
+                        <p>
+                            Precio: $10.000
+                        </p>
+                    </div>
+                    <div class="thirdSection">
+                        <button class="botonPlus">- 1 +</button>
+                        <p>$10.000</p>
+                        <p class="x">X</p>
+                    </div>
+                </div>
+                <a href="../../index.html" class="buttonSeguir">
+                    Seguir comprando
+                </a>
+            </div>
+            <div class="confirmarSection">
+                <div style="display: flex;" id="fourthData" class="fourthData">
+                    <div>
+                        <p>2 artículos</p>
+                        <p>$20.000</p>
+                    </div>
+                    <div>
+                        <p>Descuento</p>
+                        <p>---------</p>
+                    </div>
+                    <div>
+                        <p><b>Total</b></p>
+                        <p><b>$20.000</b></p>
+                    </div>
+                    <section>
+                        <p>
+                            Envío a Domicilio
+                        </p>
+                        <p>
+                            Teléfono: 2611112233
+                        </p>
+                        <p>
+                            Dirección: Av. San Martín
+                        </p>
+                        <p>
+                            Departamento: Mendoza
+                        </p>
+                        <p>
+                            Forma de pago: Mercado Pago
+                        </p>
+                    </section>
+                    <button style="width: 85%;" class="buttonSeguir"> Ver factura </button>
+                    <button class="buttonHoraEstimada"> Hora estimada: 21:15 </button>
+                </div>
+                <button id="volverButton" class="buttonVolver"> Volver</button>
+            </div>
         </div>
-    </div>
-
-</section>
-
-
-
-<section class="cards">
-<h2 class="titCards">Otros usuarios vieron</h2>
-<div class="cardsSection">
-    
-    <div class="card">
-        <img src="/assets/empanadas.png" />
-        <section class="cardText">
-            <h2>Empanadas</h2>
-            <p>
-                Esta es una descripción del producto que se está mostrando, 
-                pueden ir los ingredientes o lo que sea.
-            </p>
-            <div class="cardPrice">
-                <p class="price">$10000</p>
-                <p class="stock"></p>
-            </div>
-        </section>
-    </div>
-    <div class="card">
-        <img src="/assets/milanesas.png" />
-        <section class="cardText">
-            <h2>Milanesa</h2>
-            <p>
-                Esta es una descripción del producto que se está mostrando, 
-                pueden ir los ingredientes o lo que sea.
-            </p>
-            <div class="cardPrice">
-                <p class="price">$10000</p>
-                <p class="stock">SIN STOCK</p>
-            </div>
-        </section>
-    </div>
-    <div class="card">
-        <img src="/assets/matambre a la pizza.webp" />
-        <section class="cardText">
-            <h2>Matambre a la pizza</h2>
-            <p>
-                Esta es una descripción del producto que se está mostrando, 
-                pueden ir los ingredientes o lo que sea.
-            </p>
-            <div class="cardPrice">
-                <p class="price">$10000</p>
-                <p class="stock"></p>
-            </div>
-        </section>
-    </div>
-    <div class="card">
-        <img src="/assets/asado.webp" />
-        <section class="cardText">
-            <h2>Asado</h2>
-            <p>
-                Esta es una descripción del producto que se está mostrando, 
-                pueden ir los ingredientes o lo que sea.
-            </p>
-            <div class="cardPrice">
-                <p class="price">$10000</p>
-                <p class="stock"></p>
-            </div>
-        </section>
-    </div>
-</section>
-
-<footer>
-    <img id="logoFooter" src="/assets/logo.png"/>
-    <section>
-        <h4>REDES SOCIALES</h4>
-        <a>Facebook</a>
-        <a>Instagram</a>
-        <a>X</a>
-        <a>LinkedIn</a>
     </section>
-    <section>
-        <h4>OFICINA CENTRAL</h4>
-        <a>Calle avenida siempre viva 123</a>
-        <a>elbuensabor@sincódigos.com</a>
-        <a>(123) 456-7890</a>
-        <a style="color: #7D1F2F;">BOOOCA BOCA BOCAA</a>
-    </section>
-</footer>
+
+
+    <footer>
+        <img id="logoFooter" src="/assets/logo.png"/>
+        <section>
+            <h4>REDES SOCIALES</h4>
+            <a>Facebook</a>
+            <a>Instagram</a>
+            <a>X</a>
+            <a>LinkedIn</a>
+        </section>
+        <section>
+            <h4>OFICINA CENTRAL</h4>
+            <a>Calle avenida siempre viva 123</a>
+            <a>elbuensabor@sincódigos.com</a>
+            <a>(123) 456-7890</a>
+            <a style="color: #7D1F2F;">BOOOCA BOCA BOCAA</a>
+        </section>
+    </footer>
   
-<script src="./productDetail.js"></script>
+<script src="./shoppingCart.js"></script>
 </body>
 </html>

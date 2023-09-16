@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./shoppingCart.css">
+    <title>El buen sabor</title>
+</head>
+<body>
+
+    <header>
+        <img id="logoHeader" class="logoHeader" src="/assets/logo.png" />
+        <div class="rightSectionHeader">
+            <div class="input">
+                <input type="text" />
+                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+            </div>
+            <button id="abrirModal">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
+                <div id="miModal" class="modalcito">
+                    <div>
+                        <a id="abrirModalRegister"> Iniciar sesión</a>
+                        <a id="abrirModalMisDatosPersonales">Mis datos personales</a>
+                        <a id="abrirModalMisPedidos">Mis pedidos</a>
+                        <a href="../../selectUser.html">Salir</a>
+                    </div>
+                </div>
+            </button>
+            <button class="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 576 512"><style>svg{fill:#ffffff}</style><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                <span>0</span>
+            </button>
+        </div>
+    </header>
+    <!-- Modal Mis datos personales -->
+    <div id="misDatosPersonales" class="modalMisDatosPersonales">   
+        <div class="modalContenidoMisDatosPersonales">
+            <h2>Mis datos personales</h2>
+            <section>
+                <div class="firstData">
+                    <label>
+                        Nombre
+                        <input type="text" placeholder="Francisco"/>
+                    </label>
+                    <label>
+                        Telefono
+                        <input type="text" placeholder="123456789"/>
+                    </label>
+                    <label>
+                        Contraseña
+                        <input type="password" placeholder="********"/>
+                    </label>
+                    <label>
+                        Dirección
+                        <input type="text" placeholder="Calle 123"/>
+                    </label>
+                </div>
+                <div class="secondData">
+                    <label>
+                        Apellido
+                        <input type="text" placeholder="Manuel"/>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" placeholder="franciscomanuel@gmail.com" />
+                    </label>
+                    <label>
+                        Fecha de nacimiento
+                        <input type="date" placeholder="01/01/2000"/>
+                    </label>
+                    <label>
+                        Departamento
+                        <input type="text" placeholder="Mendoza"/>
+                    </label>
+                </div>
+            </section>
+            <div class="buttonContainerMisDatosPersonales">
+                <button>Volver</button>
+                <button>Guardar</button>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Modal Mis pedidos -->
+    <div id="misPedidos" class="modalMisPedidos">   
+        <div class="modalContenidoMisPedidos">
+            <h2>Historial de pedidos</h2>
+            <h3>Cliente: Francisco Manuel</h3>
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha/Hora</th>
+                            <th>Nro pedido</th>
+                            <th>Total</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09/12/2018 18:30</td>
+                            <td>123456</td>
+                            <td>$10000</td>
+                            <td>Confirmado</td>
+                            <td>
+                                <a href="../orderDetail/orderDetail.html" class="cocinaButton">
+                                    Ver detalle
+                                </a>
+                                <button class="cocinaButton">
+                                    Ver factura
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09/12/2018 18:30</td>
+                            <td>123456</td>
+                            <td>$10000</td>
+                            <td>Confirmado</td>
+                            <td>
+                                <a href="../orderDetail/orderDetail.html" class="cocinaButton">
+                                    Ver detalle
+                                </a>
+                                <button class="cocinaButton">
+                                    Ver factura
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09/12/2018 18:30</td>
+                            <td>123456</td>
+                            <td>$10000</td>
+                            <td>Confirmado</td>
+                            <td>
+                                <a href="../orderDetail/orderDetail.html" class="cocinaButton">
+                                    Ver detalle
+                                </a>
+                                <button class="cocinaButton">
+                                    Ver factura
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09/12/2018 18:30</td>
+                            <td>123456</td>
+                            <td>$10000</td>
+                            <td>Confirmado</td>
+                            <td>
+                                <a href="../orderDetail/orderDetail.html" class="cocinaButton">
+                                    Ver detalle
+                                </a>
+                                <button class="cocinaButton">
+                                    Ver factura
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09/12/2018 18:30</td>
+                            <td>123456</td>
+                            <td>$10000</td>
+                            <td>Confirmado</td>
+                            <td>
+                                <a href="../orderDetail/orderDetail.html" class="cocinaButton">
+                                    Ver detalle
+                                </a>
+                                <button class="cocinaButton">
+                                    Ver factura
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09/12/2018 18:30</td>
+                            <td>123456</td>
+                            <td>$10000</td>
+                            <td>Confirmado</td>
+                            <td>
+                                <a href="../orderDetail/orderDetail.html" class="cocinaButton">
+                                    Ver detalle
+                                </a>
+                                <button class="cocinaButton">
+                                    Ver factura
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>09/12/2018 18:30</td>
+                            <td>123456</td>
+                            <td>$10000</td>
+                            <td>Confirmado</td>
+                            <td>
+                                <a href="../orderDetail/orderDetail.html" class="cocinaButton">
+                                    Ver detalle
+                                </a>
+                                <button class="cocinaButton">
+                                    Ver factura
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div class="buttonContainer">
+                <button>Volver</button>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Modal Register -->
+    <div id="miModalRegister" class="modalL">   
+        <div class="modalContenidoL">
+            <div class="buttonsLogin">
+                <button id="ingresarButton" class="greyButton">Ingresar</button>
+                <button class="blackButton">Registrar</button>
+            </div>
+            <div class="inputsContainer">
+                <input type="text" placeholder="Nombre"/>
+                <input type="text" placeholder="Apellido"/>
+                <input type="text" placeholder="Direccion"/>
+                <input type="number" placeholder="Telefono"/>
+                <input type="password" placeholder="Contraseña"/>
+                <input type="password" placeholder="Confirmar Contraseña"/>
+            </div>
+            <div class="buttonGoogle">
+                <p>o registrarse con tus datos</p>
+                <button class="buttonsGray">
+                    <img src="/assets/google logo.svg" width="20px" height="20px">
+                    Google
+                </button>
+            </div>
+            <div class="buttonRegisterContainer">
+                <button id="RegistrarseButton" class="buttonClasic">Registrarme</button>
+            </div>
+        </div>
+    </div>
+     <!-- Modal Login -->
+    <div id="miModalLogin" class="modalR">   
+        <div class="modalContenidoR">
+            <div class="buttonsLogin">
+                <button class="blackButton">Ingresar</button>
+                <button id="registrarButton" class="greyButton">Registrar</button>
+            </div>
+            <div class="inputsContainer">
+                <input type="text" placeholder="Correo electrónico"/>
+                <input type="password" placeholder="Contraseña"/>
+            </div>
+            <div class="buttonGoogle">
+                <p>o ingrese con sus datos</p>
+                <button class="buttonsGray">
+                    <img src="/assets/google logo.svg" width="20px" height="20px">
+                    Google
+                </button>
+            </div>
+            <div class="buttonLoginContainer">
+                <button id="RegistrarseButton" class="buttonClasic">Ingresar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="carritoCompras">
+        <h1>CARRITO DE COMPRAS</h1>
+        <div class="carritoSection">
+            <div class="carritoProductos">
+                <div class="producto">
+                    <img src="/assets/asado.webp" width="320px" height="200px"/>
+                    <div class="info">
+                        <h4>
+                            Asado
+                        </h4>
+                        <p>
+                            Esta es una descripción del producto que se está mostrando,
+                            pueden ir los ingredientes o lo que sea
+                        </p>
+                        <p>
+                            Precio: $10.000
+                        </p>
+                    </div>
+                    <div class="thirdSection">
+                        <button class="botonPlus">- 1 +</button>
+                        <p>$10.000</p>
+                        <p class="x">X</p>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="/assets/locro.jpg" width="320px" height="200px"/>
+                    <div class="info">
+                        <h4>
+                            Locro
+                        </h4>
+                        <p>
+                            Esta es una descripción del producto que se está mostrando,
+                            pueden ir los ingredientes o lo que sea
+                        </p>
+                        <p>
+                            Precio: $10.000
+                        </p>
+                    </div>
+                    <div class="thirdSection">
+                        <button class="botonPlus">- 1 +</button>
+                        <p>$10.000</p>
+                        <p class="x">X</p>
+                    </div>
+                </div>
+                <a href="../../index.html" class="buttonSeguir">
+                    Seguir comprando
+                </a>
+            </div>
+            <div class="confirmarSection">
+                <div id="firstData" class="firstData">
+                    <div>
+                        <p>2 artículos</p>
+                        <p>$20.000</p>
+                    </div>
+                    <div>
+                        <p>Descuento</p>
+                        <p>---------</p>
+                    </div>
+                    <div>
+                        <p><b>Total</b></p>
+                        <p><b>$20.000</b></p>
+                    </div>
+                    <a href="./shoppingCart2.html" class="buttonSeguir"> Confirmar pedido </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <img id="logoFooter" src="/assets/logo.png"/>
+        <section>
+            <h4>REDES SOCIALES</h4>
+            <a>Facebook</a>
+            <a>Instagram</a>
+            <a>X</a>
+            <a>LinkedIn</a>
+        </section>
+        <section>
+            <h4>OFICINA CENTRAL</h4>
+            <a>Calle avenida siempre viva 123</a>
+            <a>elbuensabor@sincódigos.com</a>
+            <a>(123) 456-7890</a>
+            <a style="color: #7D1F2F;">BOOOCA BOCA BOCAA</a>
+        </section>
+    </footer>
+  
+<script src="./shoppingCart.js"></script>
+</body>
+</html>

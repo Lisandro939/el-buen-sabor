@@ -1,0 +1,920 @@
+html {
+    overflow-x: hidden;
+    margin: auto;
+}
+
+body {
+    margin: 0px;
+    font-family: 'system-ui', sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    margin: 0;
+}
+
+/*---- MODALCITO -----*/
+
+.modalcito{
+    display: none;
+    position: absolute;
+    top: 10;
+    left: -185px;
+    width: 200px;
+    height: 160px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    z-index:999;
+    background-color: #fff;
+    border: 1px solid #45000C;
+    border-radius: 10px 0px 10px 10px;
+}
+
+.modalcito div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    padding: 10px 10px;
+}
+
+.modalcito div a {
+    color: white;
+    background-color: #811628;
+    width: 100%;
+    padding: 4px 0px;
+    border-radius: 10px;
+}
+
+/* -------------------- HEADER --------------------*/
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 84px;
+    width: 100vw; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #811628;
+}
+
+.logoHeader {
+    width: 79px;
+    height: 79px;
+    margin-left: 100px;
+}
+
+.rightSectionHeader {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    margin-right: 100px;
+}
+
+.input {
+    position: relative;
+    color: black;
+}
+
+.input input {
+    width: 290px;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
+    }
+
+.input i {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    z-index: 99;
+    color: black;
+}
+
+.user {
+    color: white;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart > span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+
+#abrirModal {
+    position: relative;
+}
+
+/* -------------------- FIRST SECTION --------------------*/
+
+.principalSection {
+    width: 95vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.principalSectionText {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 100px;
+    gap: 40px;
+}
+
+.principalSectionText h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #220114;
+    margin: 0px;
+}
+
+.principalSectionText h3 {
+    font-size: 48px;
+    font-weight: 400;
+    color: #E1950D;
+    margin: 0px;
+}
+
+.principalSectionText h5 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    margin: 0px;
+}
+
+.principalSectionText img {
+    width: 600px;
+    height: 400px;
+}
+
+/* ----------------- Modal Login ------------------*/
+.modalL{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index:999;
+}
+
+.modalContenidoL{
+    width: 600px;
+    height: 560px;
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttonLoginContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+.buttonLoginContainer button{
+    background-color: #7D1F2F;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 1px 1px 5px #585858;
+    transition-duration: 0.4s;
+    font-size: 20px;
+}
+.buttonLoginContainer button:hover{
+    box-shadow: 1px 1px 5px rgb(170, 145, 0);
+    color: rgb(170, 145, 0);
+}
+
+
+/* ---------------- Modal Register ----------------*/
+.modalR{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index:999;
+}
+
+.modalContenidoR{
+    width: 600px;
+    height: 560px;
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttonsLogin{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttonsLogin .greyButton {
+    text-decoration-line: none ;
+    color: #b3b3b3;
+    font-size: 35px ;
+}
+
+.buttonsLogin .blackButton{
+    text-decoration-line: underline ;
+    text-decoration-color: black;
+    font-size: 35px ;
+}
+
+.buttonGoogle{
+    width: 130%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+.buttonGoogle p{
+    text-align: center;
+}
+.buttonGoogle button{
+    width: 60%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    box-shadow: 2px 2px 5px #585858;
+    text-align: center;
+    font-size: 20px;
+    
+}
+.buttonGoogle button:hover{
+    background-color: #b3b3b3;
+}
+
+.inputsContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.inputsContainer input{
+    width: 80%;
+    height: 35px;
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    border: 0;
+    font-size: 20px;
+    text-indent: 25px;
+    transition-duration: 0.3s;
+}
+.inputsContainer input:hover{
+    text-decoration-line: underline;
+    text-decoration-color: gray;
+}
+
+.buttonRegisterContainer{
+    width: 130%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+.buttonRegisterContainer button{
+    background-color: #7D1F2F;
+    width: 60%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 1px 1px 5px #585858;
+    transition-duration: 0.4s;
+}
+.buttonRegisterContainer button:hover{
+    box-shadow: 1px 1px 5px rgb(170, 145, 0);
+    color: rgb(170, 145, 0);
+}
+
+/* ------------------------        ------------------------*/
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* Modal Mis Pedidos */
+
+.modalMisPedidos{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index:999;
+}
+
+.modalContenidoMisPedidos{
+    width: 85vw;
+    height: 90vh;
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modalContenidoMisPedidos h2{
+    width: 80vw;
+    text-align: center;
+    margin: 0;
+}
+.modalContenidoMisPedidos h3{
+    width: 80vw;
+    margin: 0;
+}
+
+.buttonContainer {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.buttonContainer button {
+    background-color: #E1950D;
+    padding: 8px 16px;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(62, 62, 62, 0.5);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+    box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.preTable {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+table {
+    width: 80vw;
+    border-collapse:collapse;
+    padding:5px;
+}
+
+@media screen and (width < 1100px) {
+    section {
+        overflow-x: scroll;
+        width: 100vw;
+        align-items: start;
+    }
+}
+table tr {
+    border-radius: 10px;
+}
+table th {
+    padding:5px;
+    background: #cccccc;
+    color: #313030;
+}
+table th:first-child {
+    border-radius: 10px 0px 0px 10px;
+}
+table th:last-child {
+    border-radius: 0px 10px 10px 0px;
+}
+table td {
+    text-align:center;
+    padding:5px 5px;
+    background: #ffffff;
+    color: #000000;
+}
+
+table td:last-child {
+    padding:5px 5px;
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    border-left: 1px solid #cccccc;
+    margin-right: -160px;
+}
+
+.cocinaButton {
+    background-color: #d8db00;
+    padding: 8px 16px;
+    border-radius: 100px;
+    -webkit-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+    -moz-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+    box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+}
+.cocinaButton:hover {
+    background-color: #d8db00;
+    padding: 8px 16px;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(62, 62, 62, 0.5);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+    box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+}
+
+.verNotaButton {
+    background-color: #ff5100;
+    padding: 8px 16px;
+    border-radius: 100px;
+    -webkit-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+    -moz-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+    box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+}
+.verNotaButton:hover {
+    background-color: #ff5100;
+    padding: 8px 16px;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(62, 62, 62, 0.5);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+    box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+}
+
+.modalMisDatosPersonales {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index:999;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    font-size: 20px;
+}
+
+label input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.modalMisDatosPersonales section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+}
+
+.firstData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.secondData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.modalContenidoMisDatosPersonales{
+    width: 60vw;
+    height: 90vh;
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttonContainerMisDatosPersonales {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonContainerMisDatosPersonales button {
+    background-color: #E1950D;
+    padding: 8px 16px;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(62, 62, 62, 0.5);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+    box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+    margin: 0px 75px;
+}
+
+/* -------------------- FOOTER --------------------*/
+
+footer {
+    width: 100vw;
+    height: 200px;
+    background-color: #7D1F2F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 50px;
+    color: white;
+}
+
+footer img {
+    width: 200px;
+    height: 188px;
+    cursor: pointer;
+}
+
+footer section {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer section a {
+    margin-bottom: 10px;
+}
+
+/* --------------- CARRITO DE COMPRAS ------------------*/
+
+.carritoCompras {
+    padding-top: 120px;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    color: #000;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.carritoSection {
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.carritoProductos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 70vw;
+    gap: 20px;
+    background-color: #ffdfe5;
+    padding: 20px;
+    border: 1px solid #45000C;
+    border-radius: 10px;
+}
+
+.buttonSeguir {
+    background-color: #E1950D;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.buttonHoraEstimada {
+    background-color: #7D1F2F;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 85%;
+    color: white;
+}
+
+.producto {
+    display: flex;
+    flex-direction: row;
+}
+
+.producto .info {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.producto div h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.producto .thirdSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.x {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.botonPlus{
+    border-radius: 15px;
+    padding: 0px 20px;
+    background-color: #7D1F2F;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    height: 30px;
+}
+
+img {
+    width: 420px;
+    height: 200px;
+    margin-right: 20px;
+    aspect-ratio: 16/10;
+}
+
+p {
+    margin: 0;
+}
+
+/* ------------- CONFIRMAR SECTION --------------*/
+
+.buttonVolver {
+    display: none;
+    background-color: #E1950D;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.confirmarSection {
+    width: 20vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.firstData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.firstData div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.secondData {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.secondData section {
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.secondData section div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.secondData div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.secondData label {
+    font-size: 15px;
+}
+
+.thirdData {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.thirdData section {
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.thirdData section div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+}
+
+
+
+.thirdData .data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.thirdData label {
+    font-size: 15px;
+}
+
+.thirdData aside {
+    width: 100%;
+    padding-bottom: 15px;
+    margin-top: -40px;
+    border-bottom: 1px solid black;
+}
+
+.thirdData aside div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.thirdData aside div input {
+    background-color: #D9D9D9;
+    border: 1px solid rgb(170, 170, 170);
+}
+
+.mercadoPago {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+}
+
+.fourthData {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fourthData section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.fourthData div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inputA {
+    margin-left: 4px;
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    background-color: white;
+    border: 1px solid rgb(110, 110, 110);
+}
