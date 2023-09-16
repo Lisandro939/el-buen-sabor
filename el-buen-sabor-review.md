@@ -17,9 +17,9 @@ Criterios de aceptación:
       
 ## HU #2 - Ingreso al sistema como cliente
 
-- [ ] En la barra de navegación debe existir un botón que nos permita acceder al login de la página, el cual nos redirigirá al formulario de login correspondiente.
-- [ ] En el formulario de login debe existir una opción de poder loguearse con Google a la página o mostrar abajo el formulario para poder loguearse con los datos correspondientes.
-- [ ] En el formulario se deberá ingresar la dirección de mail con la cual el usuario se registró y su correspondiente contraseña.
+- [x] En la barra de navegación debe existir un botón que nos permita acceder al login de la página, el cual nos redirigirá al formulario de login correspondiente.
+- [x] En el formulario de login debe existir una opción de poder loguearse con Google a la página o mostrar abajo el formulario para poder loguearse con los datos correspondientes.
+- [x] En el formulario se deberá ingresar la dirección de mail con la cual el usuario se registró y su correspondiente contraseña.
 - [ ] El sistema deberá verificar mediante la base de datos, que tanto la dirección de mail como la contraseña sean correctas. Si alguno o los dos datos no son correctos, se le informará al cliente y se le permitirá intentarlo de nuevo.
 - [ ] Si los datos son correctos, se redirigirá al cliente a la página principal, apareciendo en la barra de navegación su nombre y un menú de opciones desplegable que le mostrará las opciones de ver su perfil, su historial de pedidos y la posibilidad de desconectarse.
 - [ ] Si el cliente está dado de baja, se le deberá mostrar la situación y no podrá realizar pedidos.
@@ -27,10 +27,10 @@ Criterios de aceptación:
 
 ## HU #3 - Actualización de datos como cliente
 
-- [ ] Cuando el cliente acceda a la opción de ver su perfil, se le reenviará a una página en donde podrá ver todos sus datos personales.
-- [ ] En dicha página deberá existir un botón en donde se le permita modificar sus datos personales, el cual lo redirigirá a un formulario en donde podrá cambiar sus datos.
-- [ ] En dicho formulario se le permitirá cambiar su dirección de entrega.
-- [ ] En dicho formulario se le permitirá cambiar su contraseña, la cual deberá tener un mínimo de 8 (ocho) caracteres, y deberá tener por lo menos una letra mayúscula, una letra minúscula y un símbolo, y tendrá otro campo en donde tendrá que ingresarla nuevamente.
+- [x] Cuando el cliente acceda a la opción de ver su perfil, se le reenviará a una página en donde podrá ver todos sus datos personales.
+- [x] En dicha página deberá existir un botón en donde se le permita modificar sus datos personales, el cual lo redirigirá a un formulario en donde podrá cambiar sus datos.
+- [x] En dicho formulario se le permitirá cambiar su dirección de entrega.
+- [x] En dicho formulario se le permitirá cambiar su contraseña, la cual deberá tener un mínimo de 8 (ocho) caracteres, y deberá tener por lo menos una letra mayúscula, una letra minúscula y un símbolo, y tendrá otro campo en donde tendrá que ingresarla nuevamente.
 - [ ] El sistema tendrá que verificar que las dos contraseñas coinciden. En caso contrario, se le deberá mostrar un mensaje por pantalla diciendo que las contraseñas no coinciden.
 - [ ] Si los datos modificados son aceptados por el sistema, se tendrán que registrar los nuevos datos en la base de datos del sistema, con la contraseña encriptada si es el caso.
 
@@ -80,14 +80,14 @@ Criterios de aceptación:
 
 ## HU #9 - Página principal para clientes
 
-- [ ] A la página se podrá ingresar sin necesidad de un registro o login previo.
-- [ ] La página debe tener una barra de navegación en la cual se pueda navegar por los productos separados por categorías.
-- [ ] A la derecha de la barra de navegación aparecerán los botones de registro y de login si el usuario no está logueado a la página. Si el usuario está logueado, aparecerá un botón al cual se podrá acceder a un menú de opciones para ver sus datos, su historial de pedidos y desconectarse.
-- [ ] A la izquierda de la barra de navegación aparecerá un cuadro de búsqueda para que el usuario busque alguna comida o bebida en especial. Se podrá ingresar el nombre de un producto de forma total o parcial, por ejemplo si busca “burg”, se devolverán los resultados que tengan esa frase en cualquier parte del nombre.
-- [ ] La página principal mostrará los productos disponibles con su correspondiente denominación y precio, separados por categorías.
-- [ ] Cada producto tendrá un botón o un enlace para poder acceder para ver la información detallada del producto en sí.
-- [ ] También deberá haber un botón para poder agregar un producto al carrito tanto desde la página principal como desde el detalle del producto en sí.
-- [ ] Si un producto no tiene los insumos necesarios para prepararse, igual aparecerá en la página pero con una leyenda de que ese producto no está disponible por el momento y el botón de agregar al pedido deshabilitado.
+- [x] A la página se podrá ingresar sin necesidad de un registro o login previo.
+- [x] La página debe tener una barra de navegación en la cual se pueda navegar por los productos separados por categorías.
+- [x] A la derecha de la barra de navegación aparecerán los botones de registro y de login si el usuario no está logueado a la página. Si el usuario está logueado, aparecerá un botón al cual se podrá acceder a un menú de opciones para ver sus datos, su historial de pedidos y desconectarse.
+- [x] A la izquierda de la barra de navegación aparecerá un cuadro de búsqueda para que el usuario busque alguna comida o bebida en especial. Se podrá ingresar el nombre de un producto de forma total o parcial, por ejemplo si busca “burg”, se devolverán los resultados que tengan esa frase en cualquier parte del nombre.
+- [x] La página principal mostrará los productos disponibles con su correspondiente denominación y precio, separados por categorías.
+- [x] Cada producto tendrá un botón o un enlace para poder acceder para ver la información detallada del producto en sí.
+- [x] También deberá haber un botón para poder agregar un producto al carrito tanto desde la página principal como desde el detalle del producto en sí.
+- [x] Si un producto no tiene los insumos necesarios para prepararse, igual aparecerá en la página pero con una leyenda de que ese producto no está disponible por el momento y el botón de agregar al pedido deshabilitado.
 
 ## HU #10 - Búsqueda de productos
 
@@ -97,7 +97,7 @@ Criterios de aceptación:
 
 ## HU #11 - Carrito de compras
 
-- [ ] Cada producto que se agregue desde la página principal, de búsqueda o de detalle de producto se irá agregando al carrito de compras, en donde aparecerá el nombre, el precio unitario y el subtotal de dicho producto (cantidad pedida del producto * precio unitario). Este subtotal se tendrá que actualizar automáticamente al agregar o disminuir cantidades del producto.
+- [x] Cada producto que se agregue desde la página principal, de búsqueda o de detalle de producto se irá agregando al carrito de compras, en donde aparecerá el nombre, el precio unitario y el subtotal de dicho producto (cantidad pedida del producto * precio unitario). Este subtotal se tendrá que actualizar automáticamente al agregar o disminuir cantidades del producto.
 - [ ] Si el cliente agrega dos o más productos iguales al pedido, no aparecerán por separado, sino que se mostrarán las unidades correspondientes de cada producto.
 - [ ] En cada producto habrá botones o similar para sumar o restar cantidades de dicho producto y también para eliminarlo.
 - [ ] Se mostrará el subtotal general del pedido, teniendo que actualizarse automáticamente ante cada cambio en el carrito de compras (por ejemplo al agregar o disminuir la cantidad de un producto o la eliminación de alguno).
@@ -107,9 +107,9 @@ Criterios de aceptación:
 ## HU #12 - Confirmación del pedido
 
 - [ ] Al confirmar un pedido, el sistema verificará que el usuario haya ingresado, si no se lo redirigirá a la pantalla de ingreso. Después del ingreso de lo redirigirá a la pantalla del pedido.
-- [ ] Acto seguido se le preguntará al cliente si el pedido lo retira en local o si lo quiere a domicilio. Si lo retira en local se le ofrecerá un 10% de descuento. Si se elige la opción de envío a domicilio se le pedirá la dirección y el teléfono (importante, mostrar como datos predeterminados los ingresados al momento del registro, los cuales podrán modificarse si es necesario).
-- [ ] A continuación se le pedirá al cliente que elija la forma de pago. Si en el paso anterior se eligió ‘Envío a domicilio’, la única opción será Mercado Pago. Si por el contrario se eligió ‘Retiro en local’, se mostrará como opciones ‘Efectivo’ o ‘Mercado Pago’.
-- [ ] Por último se le mostrará al cliente una pantalla con todo el resumen (detalle de ítems pedidos, forma de entrega, forma de pago, detalle monetario con el subtotal, descuento si es que corresponde y total) y un botón de ‘Confirmar pedido’.
+- [x] Acto seguido se le preguntará al cliente si el pedido lo retira en local o si lo quiere a domicilio. Si lo retira en local se le ofrecerá un 10% de descuento. Si se elige la opción de envío a domicilio se le pedirá la dirección y el teléfono (importante, mostrar como datos predeterminados los ingresados al momento del registro, los cuales podrán modificarse si es necesario).
+- [x] A continuación se le pedirá al cliente que elija la forma de pago. Si en el paso anterior se eligió ‘Envío a domicilio’, la única opción será Mercado Pago. Si por el contrario se eligió ‘Retiro en local’, se mostrará como opciones ‘Efectivo’ o ‘Mercado Pago’.
+- [x] Por último se le mostrará al cliente una pantalla con todo el resumen (detalle de ítems pedidos, forma de entrega, forma de pago, detalle monetario con el subtotal, descuento si es que corresponde y total) y un botón de ‘Confirmar pedido’.
 - [ ] Cuando el pedido se confirme, el sistema tendrá que descontar del stock de ingredientes los ingredientes y su correspondiente cantidad de cada producto.
 - [ ] Asimismo, cuando un pedido se confirme, se le asignará de forma predeterminada el estado “A confirmar” y el cajero podrá verlo en el listado de pedidos (ver HU#14).
 - [ ] Si el cliente eligió como opción de pago ‘Mercado Pago’, se mostrará un botón que procederá a realizar el pago mediante dicha plataforma (importante, usar las tarjetas de prueba que ofrece Mercado Pago, no tarjetas reales).
@@ -118,10 +118,10 @@ Criterios de aceptación:
 
 ## HU #13 - Historial de pedidos
 
-- [ ] El cliente tiene que haber ingresado al sistema para poder ver su historial de pedidos.
-- [ ] El cliente debe poder ver una grilla en donde aparecerán todos los pedidos realizados al local con su respectiva información (fecha, número de pedido, total), un botón para poder ver el detalle de cada pedido y otro botón para poder visualizar la factura de dicho pedido.
-- [ ] En la pantalla de detalle de pedido, deben aparecer todos los datos (fecha, número de pedido, detalle de ítems pedidos, subtotal, descuento y total, además la forma de entrega y la forma de pago).
-- [ ] En la pantalla de detalle de pedido también debe aparecer un botón para poder visualizar la factura de dicho pedido.
+- [x] El cliente tiene que haber ingresado al sistema para poder ver su historial de pedidos.
+- [x] El cliente debe poder ver una grilla en donde aparecerán todos los pedidos realizados al local con su respectiva información (fecha, número de pedido, total), un botón para poder ver el detalle de cada pedido y otro botón para poder visualizar la factura de dicho pedido.
+- [x] En la pantalla de detalle de pedido, deben aparecer todos los datos (fecha, número de pedido, detalle de ítems pedidos, subtotal, descuento y total, además la forma de entrega y la forma de pago).
+- [x] En la pantalla de detalle de pedido también debe aparecer un botón para poder visualizar la factura de dicho pedido.
 - [ ] Cuando se elige visualizar una factura, tanto desde la grilla como desde el detalle de un pedido, la misma se podrá imprimir o descargar.
 
 ## HU #14 - Vista y recepción de pedidos
