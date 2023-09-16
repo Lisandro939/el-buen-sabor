@@ -21,7 +21,7 @@ a {
     top: 10;
     left: -185px;
     width: 200px;
-    height: 120px;
+    height: 160px;
     justify-content: space-around;
     align-items: center;
     gap: 5px;
@@ -331,9 +331,8 @@ footer section {
 footer section a {
     margin-bottom: 10px;
 }
-/* ---------------- Overlay Register ----------------*/
-
-.modalIngresar{
+/* ----------------- Modal Login ------------------*/
+.modalL{
     display: none;
     position: fixed;
     top: 0;
@@ -346,7 +345,55 @@ footer section a {
     z-index:999;
 }
 
-.modalContenido{
+.modalContenidoL{
+    width: 600px;
+    height: 560px;
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttonLoginContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+.buttonLoginContainer button{
+    background-color: #7D1F2F;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 1px 1px 5px #585858;
+    transition-duration: 0.4s;
+    font-size: 20px;
+}
+.buttonLoginContainer button:hover{
+    box-shadow: 1px 1px 5px rgb(170, 145, 0);
+    color: rgb(170, 145, 0);
+}
+
+
+/* ---------------- Modal Register ----------------*/
+.modalR{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index:999;
+}
+
+.modalContenidoR{
     width: 600px;
     height: 560px;
     border-radius: 30px;
@@ -364,14 +411,21 @@ footer section a {
     justify-content: space-around;
     align-items: center;
 }
-.buttonsLogin button{
+
+.buttonsLogin .greyButton {
+    text-decoration-line: none ;
+    color: #b3b3b3;
+    font-size: 35px ;
+}
+
+.buttonsLogin .blackButton{
     text-decoration-line: underline ;
-    text-decoration-color: black; 
+    text-decoration-color: black;
     font-size: 35px ;
 }
 
 .buttonGoogle{
-    width: 100%;
+    width: 130%;
     display: flex;
     flex-direction: column ;
     justify-content: center;
@@ -422,16 +476,17 @@ footer section a {
 }
 
 .buttonRegisterContainer{
-    width: 80%;
+    width: 130%;
     display: flex;
     flex-direction: column ;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 .buttonRegisterContainer button{
     background-color: #7D1F2F;
-    width: 30%;
-    height: 30px;
+    width: 60%;
+    height: 40px;
+    font-size: 20px;
     border-radius: 30px;
     color: white;
     box-shadow: 1px 1px 5px #585858;
@@ -453,8 +508,10 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
+/* Modal Mis Pedidos */
+
 .modalMisPedidos{
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -567,23 +624,6 @@ table td:last-child {
     margin-right: -160px;
 }
 
-.detailButton {
-    background-color: #E1950D;
-    padding: 8px 16px;
-    border-radius: 100px;
-    -webkit-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
-    -moz-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
-    box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
-}
-.detailButton:hover {
-    background-color: #E1950D;
-    padding: 8px 16px;
-    border-radius: 100px;
-    -webkit-box-shadow: 0px 0px 0px 1px rgba(62, 62, 62, 0.5);
-    -moz-box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
-    box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
-}
-
 .cocinaButton {
     background-color: #d8db00;
     padding: 8px 16px;
@@ -618,19 +658,85 @@ table td:last-child {
     box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
 }
 
-.anularButton {
-    background-color: #FF2727;
-    padding: 8px 16px;
-    border-radius: 100px;
-    -webkit-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
-    -moz-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
-    box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+.modalMisDatosPersonales {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index:999;
 }
-.anularButton:hover {
-    background-color: #FF2727;
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    font-size: 20px;
+}
+
+label input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.modalMisDatosPersonales section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+}
+
+.firstData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.secondData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.modalContenidoMisDatosPersonales{
+    width: 60vw;
+    height: 90vh;
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttonContainerMisDatosPersonales {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonContainerMisDatosPersonales button {
+    background-color: #E1950D;
     padding: 8px 16px;
     border-radius: 100px;
     -webkit-box-shadow: 0px 0px 0px 1px rgba(62, 62, 62, 0.5);
     -moz-box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
     box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+    margin: 0px 75px;
 }

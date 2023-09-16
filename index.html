@@ -8,6 +8,8 @@
     <title>El buen sabor</title>
 </head>
 <body>
+
+
     <header>
         <img id="logoHeader" class="logoHeader" src="assets/logo.png" />
         <div class="rightSectionHeader">
@@ -19,9 +21,10 @@
                 <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 512 512"><style>svg{fill:#ffffff}</style><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
                 <div id="miModal" class="modalcito">
                     <div>
-                        <a>Mis datos personales</a>
-                        <a  id="abrirModalMisPedidos">Mis pedidos</a>
-                        <a>Salir</a>
+                        <a id="abrirModalRegister"> Iniciar sesión</a>
+                        <a id="abrirModalMisDatosPersonales">Mis datos personales</a>
+                        <a id="abrirModalMisPedidos">Mis pedidos</a>
+                        <a href="./selectUser.html">Salir</a>
                     </div>
                 </div>
             </button>
@@ -39,6 +42,56 @@
         </div>
         <img src="assets/tabla-asado.png" />
     </section>
+    <!-- Modal Mis datos personales -->
+    <div id="misDatosPersonales" class="modalMisDatosPersonales">   
+        <div class="modalContenidoMisDatosPersonales">
+            <h2>Mis datos personales</h2>
+            <section>
+                <div class="firstData">
+                    <label>
+                        Nombre
+                        <input type="text" placeholder="Francisco"/>
+                    </label>
+                    <label>
+                        Telefono
+                        <input type="text" placeholder="123456789"/>
+                    </label>
+                    <label>
+                        Contraseña
+                        <input type="password" placeholder="********"/>
+                    </label>
+                    <label>
+                        Dirección
+                        <input type="text" placeholder="Calle 123"/>
+                    </label>
+                </div>
+                <div class="secondData">
+                    <label>
+                        Apellido
+                        <input type="text" placeholder="Manuel"/>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" placeholder="franciscomanuel@gmail.com" />
+                    </label>
+                    <label>
+                        Fecha de nacimiento
+                        <input type="date" placeholder="01/01/2000"/>
+                    </label>
+                    <label>
+                        Departamento
+                        <input type="text" placeholder="Mendoza"/>
+                    </label>
+                </div>
+            </section>
+            <div class="buttonContainerMisDatosPersonales">
+                <button>Volver</button>
+                <button>Guardar</button>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Modal Mis pedidos -->
     <div id="misPedidos" class="modalMisPedidos">   
         <div class="modalContenidoMisPedidos">
             <h2>Historial de pedidos</h2>
@@ -61,9 +114,9 @@
                             <td>$10000</td>
                             <td>Confirmado</td>
                             <td>
-                                <button class="cocinaButton">
+                                <a href="./user/orderDetail/orderDetail.html" class="cocinaButton">
                                     Ver detalle
-                                </button>
+                                </a>
                                 <button class="cocinaButton">
                                     Ver factura
                                 </button>
@@ -75,9 +128,9 @@
                             <td>$10000</td>
                             <td>Confirmado</td>
                             <td>
-                                <button class="cocinaButton">
+                                <a href="./user/orderDetail/orderDetail.html" class="cocinaButton">
                                     Ver detalle
-                                </button>
+                                </a>
                                 <button class="cocinaButton">
                                     Ver factura
                                 </button>
@@ -89,9 +142,9 @@
                             <td>$10000</td>
                             <td>Confirmado</td>
                             <td>
-                                <button class="cocinaButton">
+                                <a href="./user/orderDetail/orderDetail.html" class="cocinaButton">
                                     Ver detalle
-                                </button>
+                                </a>
                                 <button class="cocinaButton">
                                     Ver factura
                                 </button>
@@ -103,9 +156,9 @@
                             <td>$10000</td>
                             <td>Confirmado</td>
                             <td>
-                                <button class="cocinaButton">
+                                <a href="./user/orderDetail/orderDetail.html" class="cocinaButton">
                                     Ver detalle
-                                </button>
+                                </a>
                                 <button class="cocinaButton">
                                     Ver factura
                                 </button>
@@ -117,9 +170,9 @@
                             <td>$10000</td>
                             <td>Confirmado</td>
                             <td>
-                                <button class="cocinaButton">
+                                <a href="./user/orderDetail/orderDetail.html" class="cocinaButton">
                                     Ver detalle
-                                </button>
+                                </a>
                                 <button class="cocinaButton">
                                     Ver factura
                                 </button>
@@ -131,9 +184,9 @@
                             <td>$10000</td>
                             <td>Confirmado</td>
                             <td>
-                                <button class="cocinaButton">
+                                <a href="./user/orderDetail/orderDetail.html" class="cocinaButton">
                                     Ver detalle
-                                </button>
+                                </a>
                                 <button class="cocinaButton">
                                     Ver factura
                                 </button>
@@ -145,9 +198,9 @@
                             <td>$10000</td>
                             <td>Confirmado</td>
                             <td>
-                                <button class="cocinaButton">
+                                <a href="./user/orderDetail/orderDetail.html" class="cocinaButton">
                                     Ver detalle
-                                </button>
+                                </a>
                                 <button class="cocinaButton">
                                     Ver factura
                                 </button>
@@ -162,18 +215,12 @@
         </div>
         
     </div>
-    <div class="modalIngresar">   
-        <div class="modalContenido">
+    <!-- Modal Register -->
+    <div id="miModalRegister" class="modalL">   
+        <div class="modalContenidoL">
             <div class="buttonsLogin">
-                <button>Ingresar</button>
-                <button>Registrar</button>
-            </div>
-            <div class="buttonGoogle">
-                <button class="buttonsGray">
-                    <img src="assets/google logo.svg" width="20px" height="20px">
-                    Google
-                </button>
-                <p>o registrarse con tus datos</p>
+                <button id="ingresarButton" class="greyButton">Ingresar</button>
+                <button class="blackButton">Registrar</button>
             </div>
             <div class="inputsContainer">
                 <input type="text" placeholder="Nombre"/>
@@ -183,11 +230,42 @@
                 <input type="password" placeholder="Contraseña"/>
                 <input type="password" placeholder="Confirmar Contraseña"/>
             </div>
+            <div class="buttonGoogle">
+                <p>o registrarse con tus datos</p>
+                <button class="buttonsGray">
+                    <img src="assets/google logo.svg" width="20px" height="20px">
+                    Google
+                </button>
+            </div>
             <div class="buttonRegisterContainer">
                 <button id="RegistrarseButton" class="buttonClasic">Registrarme</button>
             </div>
         </div>
     </div>
+     <!-- Modal Login -->
+    <div id="miModalLogin" class="modalR">   
+        <div class="modalContenidoR">
+            <div class="buttonsLogin">
+                <button class="blackButton">Ingresar</button>
+                <button id="registrarButton" class="greyButton">Registrar</button>
+            </div>
+            <div class="inputsContainer">
+                <input type="text" placeholder="Correo electrónico"/>
+                <input type="password" placeholder="Contraseña"/>
+            </div>
+            <div class="buttonGoogle">
+                <p>o ingrese con sus datos</p>
+                <button class="buttonsGray">
+                    <img src="assets/google logo.svg" width="20px" height="20px">
+                    Google
+                </button>
+            </div>
+            <div class="buttonLoginContainer">
+                <button id="RegistrarseButton" class="buttonClasic">Ingresar</button>
+            </div>
+        </div>
+    </div>
+
 
     <div class="categoriesSection">
         <p>CATEGORÍAS</p>
@@ -207,7 +285,7 @@
         </div>
     </div>
     <div class="cardsSection">
-        <a href="./detallePedido/detalle.html">
+        <a href="./user/productDetail/productDetail.html">
             <div class="card">
                 <img src="assets/asado.webp" />
                 <section class="cardText">
@@ -237,7 +315,7 @@
                     </div>
                 </section>
             </div>
-        <a href="./detallePedido/detalle.html">
+        <a href="./user/productDetail/productDetail.html">
             <div class="card">
                 <img src="assets/milanesas.png" />
                 <section class="cardText">
@@ -253,7 +331,7 @@
                 </section>
             </div>
         </a>
-        <a href="./detallePedido/detalle.html">
+        <a href="./user/productDetail/productDetail.html">
             <div class="card">
                 <img src="assets/matambre a la pizza.webp" />
                 <section class="cardText">
@@ -269,7 +347,7 @@
                 </section>
             </div>
         </a>
-        <a href="./detallePedido/detalle.html">
+        <a href="./user/productDetail/productDetail.html">
             <div class="card">
                 <img src="assets/locro.jpg" />
                 <section class="cardText">
@@ -285,7 +363,7 @@
                 </section>
             </div>
         </a>
-        <a href="./detallePedido/detalle.html">
+        <a href="./user/productDetail/productDetail.html">
             <div class="card">
                 <img src="assets/choripan.webp" />
                 <section class="cardText">
@@ -315,7 +393,7 @@
                     </div>
                 </section>
             </div>
-        <a href="./detallePedido/detalle.html">
+        <a href="./user/productDetail/productDetail.html">
             <div class="card">
                 <img src="assets/tarta-de-carne-final.png" />
                 <section class="cardText">
