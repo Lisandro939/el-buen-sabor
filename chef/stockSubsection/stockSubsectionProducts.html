@@ -10,25 +10,79 @@
 <body>
     <header>
         <div>
-            <button>
-                <svg width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <button id="button">
+                <svg width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                     <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                     <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
                 </svg>
+                <div id="miModal" class="modalcito">
+                    <div>
+                        <a id="abrirModalMisDatosPersonales">Mis datos personales</a>
+                        <a href="/selectUser.html">Salir</a>
+                    </div>
+                </div>
             </button>
-            
         </div>
         <div class="center">
             <img id="logo" src="../../assets/logoBuenSabor-Naranja.png" width="150px" height="100px"/>
-            <h1>COCINA</h1>
+            <h1>COCINERO</h1>
         </div>
     </header>
+    <!-- Modal Mis datos personales -->
+    <div id="misDatosPersonales" class="modalMisDatosPersonales">   
+        <div class="modalContenidoMisDatosPersonales">
+            <h2>Mis datos personales</h2>
+            <section>
+                <div class="firstData">
+                    <label>
+                        Nombre
+                        <input type="text" placeholder="Francisco"/>
+                    </label>
+                    <label>
+                        Telefono
+                        <input type="text" placeholder="123456789"/>
+                    </label>
+                    <label>
+                        Contraseña
+                        <input type="password" placeholder="********"/>
+                    </label>
+                    <label>
+                        Dirección
+                        <input type="text" placeholder="Calle 123"/>
+                    </label>
+                </div>
+                <div class="secondData">
+                    <label>
+                        Apellido
+                        <input type="text" placeholder="Manuel"/>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" placeholder="franciscomanuel@gmail.com" />
+                    </label>
+                    <label>
+                        Fecha de nacimiento
+                        <input type="date" placeholder="01/01/2000"/>
+                    </label>
+                    <label>
+                        Departamento
+                        <input type="text" placeholder="Mendoza"/>
+                    </label>
+                </div>
+            </section>
+            <div class="buttonContainerMisDatosPersonales">
+                <button>Volver</button>
+                <button>Guardar</button>
+            </div>
+        </div>
+        
+    </div>
     <div class="subHeader">
-        <button>
+        <a href="../ordersSubsection/ordersSubsection.html">
             Pedidos
-        </button>
+        </a>
         <button>
             Stock
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle-filled" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -36,17 +90,17 @@
                 <path d="M11.99 1.968c1.023 0 1.97 .521 2.512 1.359l.103 .172l7.1 12.25l.062 .126a3 3 0 0 1 -2.568 4.117l-.199 .008h-14l-.049 -.003l-.112 .002a3 3 0 0 1 -2.268 -1.226l-.109 -.16a3 3 0 0 1 -.32 -2.545l.072 -.194l.06 -.125l7.092 -12.233a3 3 0 0 1 2.625 -1.548z" stroke-width="0" fill="currentColor" />
             </svg>
         </button>
-        <button>
+        <a href="../stockSubsection/stockSubsectionIngredients.html">
             Rubros
-        </button>
+        </a>
     </div>
     <div class="typeSection">
         <button>
             Productos
         </button>
-        <button>
+        <a href="./stockSubsectionIngredients.html">
             Ingredientes
-        </button>
+        </a>
     </div>
     <div class="preTable">
         <div class="buttons">
@@ -276,6 +330,6 @@
             <a style="color: #7D1F2F;">BOOOCA BOCA BOCAA</a>
         </section>
     </footer>
-<script src="./listOfOrders.js"></script>
+<script src="./stockSubsectionProducts.js"></script>
 </body>
 </html>
