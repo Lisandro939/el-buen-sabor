@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  type="text/css" rel="stylesheet" href="./stockSubsectionIngredients.css">
+    <link  type="text/css" rel="stylesheet" href="/styles/modals.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>El buen sabor</title>
 </head>
@@ -103,10 +104,10 @@
     </div>
     <div class="preTable">
         <div class="buttons">
-            <button class="registerShop">
+            <button id="registrar" class="registerShop">
                 Registrar compra
             </button>
-            <button class="new">
+            <button id="nuevo" class="new">
                 Nuevo
             </button>
         </div>
@@ -124,6 +125,65 @@
             type="search"
             placeholder="Buscar"
         />
+    </div>
+    <!--------HU Editar/Nuevo Ingrediente-------->
+    <div id="nuevoIngrediente" class="container">
+        <div class="modalEN_Ingrediente">
+            <div class="tituloIngrediente">
+                <h2>Editar / Nuevo Ingrediente</h2>
+            </div>
+    
+            <div class="seccionIngrediente">
+                <div class="inputsIngrediente">
+                <b>Nombre</b>
+                <input type="text" placeholder="Ej: Chorizo Colorado"/>
+                <b>Stock Minimo</b>
+                <input type="number" placeholder="Numero"/>
+                <b>Precio de Costo</b>
+                <input type="text" placeholder="Ej: $553,81"/>
+                <b>Estado Alta/Baja</b>
+                <input type="text" placeholder="Alta/Baja">
+                </div>
+    
+                <div class="inputsIngrediente">
+                <b>Rubro</b>
+                <input type="text" placeholder="Ej: Embutidos"/>
+                <b>Stock Actual</b>
+                <input type="number" placeholder="Numero"/>
+                <b>Unidad de Medida</b>
+                <input type="text" placeholder="kg"/>
+                </div>
+            </div>
+    
+            <div class="botonesIngrediente">
+                <div class="button1"><button>Volver</button></div>
+                <div class="button2"><button>Guardar</button></div>
+            </div>
+        </div>
+    </div>
+    <!-------Registrar compra-------------->
+    <div id="registrarCompra" class="containerCompra">
+        <div class="modalRegistrarCompra">
+            <div class="tituloIngrediente">
+                <h2>Compra de stock</h2>
+            </div>
+    
+            <div class="seccionIngrediente">
+                <div class="inputsCompra">
+                    <b>Nombre</b>
+                    <input type="text" placeholder="Ej: Chorizo Colorado"/>
+                    <b>Cantidad</b>
+                    <input type="number" placeholder="Numero"/>
+                    <b>Precio de Costo</b>
+                    <input type="text" placeholder="Ej: $553,81"/>
+                </div>
+            </div>
+    
+            <div class="botonesIngrediente">
+                <div class="button1"><button>Volver</button></div>
+                <div class="button2"><button>Guardar</button></div>
+            </div>
+        </div>
     </div>
     <section>
         <table>

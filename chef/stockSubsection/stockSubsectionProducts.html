@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  type="text/css" rel="stylesheet" href="./stockSubsectionProducts.css">
+    <link  type="text/css" rel="stylesheet" href="/styles/modals.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>El buen sabor</title>
 </head>
@@ -104,7 +105,7 @@
     </div>
     <div class="preTable">
         <div class="buttons">
-            <button class="new">
+            <button id="nuevo" class="new">
                 Nuevo
             </button>
         </div>
@@ -113,6 +114,46 @@
             placeholder="Buscar"
         />
     </div>
+
+    <!--------HU Editar/Nuevo Producto-------->
+    <div id="nuevoProducto" class="container">
+        <div class="modalEN_Producto">
+            <div class="tituloProducto">
+                <h2>Editar / Nuevo Producto</h2>
+            </div>
+        
+            <div class="seccionProducto">
+                <div class="inputsProducto">
+                <b>Nombre</b>
+                <input type="text" placeholder="Ej: Asado"/>
+                <b>Descripcion</b>
+                <input type="text" placeholder="Ej: Punta de Espalda"/>
+                <b>Precio</b>
+                <input type="text" placeholder="Ej: $9356,89"/>
+                <b>Estado Alta/Baja</b>
+                <input type="text" placeholder="Alta/Baja">
+                </div>
+        
+                <div class="inputsProducto">
+                <b>Rubro</b>
+                <input type="text" placeholder="Parrilla"/>
+                <b>Tiempo de Cocción</b>
+                <input type="number" placeholder="Numero"/>
+                <b>Reseta</b>
+                <button>Crear / Modificar Receta</button>
+                <b>Imagen / Archivo</b>
+                <input type="text" placeholder="Subir Archivo"/>
+                </div>
+            </div>
+        
+            <div class="botonesProducto">
+                <div class="button1"><button>Volver</button></div>
+                <div class="button2"><button>Guardar</button></div>
+            </div>
+        </div>
+    </div>
+    
+
     <section>
         <table>
             <thead>
