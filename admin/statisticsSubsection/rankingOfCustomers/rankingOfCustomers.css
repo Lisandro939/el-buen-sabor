@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+.header{
+    background-color: #811628;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width : 100vw;
+}
+.header a {
+    width: 105px;
+    height: 126px;
+    margin-top: 0;
+    
+}
+.header h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+}
+
+
+
+.titulos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+  
+}
+
+.grafico {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px; 
+}
+
+
+/* Estilo para la etiqueta 'label' */
+label {
+    font-weight: bold; /* Hace que el texto sea negrita */
+    font-size: 16px;   /* Cambia el tamaño de la fuente */
+    color: #333;       /* Cambia el color del texto */
+    margin: auto; 
+    /* Añade un margen derecho para separar del select */
+}
+
+/* Estilo para el select 'categorias' */
+#categorias {
+    width: 100px;     /* Cambia el ancho del select */
+    padding: 5px;     /* Añade relleno interno al select */
+    border: 1px solid #999; /* Añade un borde alrededor del select */
+    border-radius: 5px;    /* Agrega bordes redondeados al select */
+    font-size: 14px; /* Cambia el tamaño de la fuente en el select */
+    background-color: #D9D9D9 ;
+}
+
+#fechaDesde {
+    width: 100px;     /* Cambia el ancho del select */    /* Añade relleno interno al select */
+    border: 1px solid #999; /* Añade un borde alrededor del select */
+    border-radius: 5px;    /* Agrega bordes redondeados al select */
+    font-size: 14px;
+    background-color: #D9D9D9 ; 
+}
+
+#fechaHasta {
+    width: 80px;     /* Cambia el ancho del select */     /* Añade relleno interno al select */
+    border: 1px solid #D999; /* Añade un borde alrededor del select */
+    border-radius: 5px;    /* Agrega bordes redondeados al select */
+    font-size: 14px; /* Cambia el tamaño de la fuente en el select */
+    background-color: #D9D9D9 ;
+}
+
+.tacataca {
+    display: flex;
+    justify-content: space-around;
+
+     /* Cambia el ancho del select */    /* Añade relleno interno al select */
+       /* Agrega bordes redondeados al select */
+    font-size: 16px; /* Cambia el tamaño de la fuente en el select */
+
+}
+
+.graficos {
+    padding: 25px;
+}
+
+/*FOOTER*/
+
+footer {
+    margin: auto;
+    height: 200px;
+    background-color: #7D1F2F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 50px;
+    color: white;
+}
+
+footer img {
+    width: 200px;
+    height: 188px;
+    cursor: pointer;
+}
+
+footer section {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer section a {
+    margin-bottom: 10px;
+}
+
