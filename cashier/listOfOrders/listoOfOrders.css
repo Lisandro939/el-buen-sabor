@@ -38,6 +38,12 @@ header {
     justify-content: end;
 }
 
+header button {
+    margin-right: 5px;
+    margin-top: 5px;
+    position: relative;
+}
+
 header .center {
     position: absolute;
     top: -12px;
@@ -59,6 +65,128 @@ header .center {
     font-size: 30px;
     margin: 0px;
 }
+
+/*---- MODALCITO -----*/
+
+.modalcito{
+    display: none;
+    position: absolute;
+    top: 10;
+    left: -185px;
+    width: 200px;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    z-index:999;
+    background-color: #fff;
+    border: 1px solid #45000C;
+    border-radius: 10px 0px 10px 10px;
+}
+
+.modalcito div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    padding: 10px 10px;
+}
+
+.modalcito div a {
+    color: white;
+    background-color: #811628;
+    width: 100%;
+    padding: 4px 0px;
+    border-radius: 5px;
+}
+
+/* -------------- MODAL MIS DATOS PERSONALES -----------*/
+
+.modalMisDatosPersonales {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index:999;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+    font-size: 20px;
+}
+
+label input {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.modalMisDatosPersonales section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+}
+
+.firstData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.secondData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.modalContenidoMisDatosPersonales{
+    width: 60vw;
+    height: 90vh;
+    border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttonContainerMisDatosPersonales {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonContainerMisDatosPersonales button {
+    background-color: #E1950D;
+    padding: 8px 16px;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(62, 62, 62, 0.5);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+    box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+    margin: 0px 75px;
+}
+
 
 /*---------------- MIDDLE SECTION ----------------*/
 

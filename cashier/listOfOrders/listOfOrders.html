@@ -10,31 +10,87 @@
 <body>
     <header>
         <div>
-            <button>
-                <svg width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <button id="button">
+                <svg width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                     <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                     <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
                 </svg>
+                <div id="miModal" class="modalcito">
+                    <div>
+                        <a id="abrirModalMisDatosPersonales">Mis datos personales</a>
+                        <a href="/selectUser.html">Salir</a>
+                    </div>
+                </div>
             </button>
-            
         </div>
         <div class="center">
             <img id="logo" src="../../assets/logoBuenSabor-Naranja.png" width="150px" height="100px"/>
             <h1>CAJERO</h1>
         </div>
     </header>
+    <!-- Modal Mis datos personales -->
+    <div id="misDatosPersonales" class="modalMisDatosPersonales">   
+        <div class="modalContenidoMisDatosPersonales">
+            <h2>Mis datos personales</h2>
+            <section>
+                <div class="firstData">
+                    <label>
+                        Nombre
+                        <input type="text" placeholder="Francisco"/>
+                    </label>
+                    <label>
+                        Telefono
+                        <input type="text" placeholder="123456789"/>
+                    </label>
+                    <label>
+                        Contraseña
+                        <input type="password" placeholder="********"/>
+                    </label>
+                    <label>
+                        Dirección
+                        <input type="text" placeholder="Calle 123"/>
+                    </label>
+                </div>
+                <div class="secondData">
+                    <label>
+                        Apellido
+                        <input type="text" placeholder="Manuel"/>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" placeholder="franciscomanuel@gmail.com" />
+                    </label>
+                    <label>
+                        Fecha de nacimiento
+                        <input type="date" placeholder="01/01/2000"/>
+                    </label>
+                    <label>
+                        Departamento
+                        <input type="text" placeholder="Mendoza"/>
+                    </label>
+                </div>
+            </section>
+            <div class="buttonContainerMisDatosPersonales">
+                <button>Volver</button>
+                <button>Guardar</button>
+            </div>
+        </div>
+        
+    </div>
     <div class="preTable">
         <div>
             <label>
                 Estado:
             </label>
             <select>
-                <option>Orden 1</option>
-                <option>Orden 2</option>
-                <option>Orden 3</option>
-                <option>Orden 4</option>
+                <option>Todos</option>
+                <option>A confirmar</option>
+                <option>En cocina</option>
+                <option>Listo</option>
+                <option>En delivery</option>
+                <option>Entregado</option>
             </select>
         </div>
         <input type="search" />
@@ -62,9 +118,9 @@
                     <td>No</td>
                     <td>A confirmar</td>
                     <td>
-                        <button class="detailButton">
+                        <a style="font-size: 13px;" href="../orderDetail/orderDetail.html" class="detailButton">
                             Ver detalle
-                        </button>
+                        </a>
                     </td>
                     <td>
                         <button class="cocinaButton">
@@ -89,9 +145,9 @@
                     <td>No</td>
                     <td>A confirmar</td>
                     <td>
-                        <button class="detailButton">
+                        <a style="font-size: 13px;" href="../orderDetail/orderDetail.html" class="detailButton">
                             Ver detalle
-                        </button>
+                        </a>
                     </td>
                     <td>
                         <button class="cocinaButton">
@@ -116,9 +172,9 @@
                     <td>No</td>
                     <td>A confirmar</td>
                     <td>
-                        <button class="detailButton">
+                        <a style="font-size: 13px;" href="../orderDetail/orderDetail.html" class="detailButton">
                             Ver detalle
-                        </button>
+                        </a>
                     </td>
                     <td>
                         <button class="cocinaButton">
@@ -143,9 +199,9 @@
                     <td>No</td>
                     <td>A confirmar</td>
                     <td>
-                        <button class="detailButton">
+                        <a style="font-size: 13px;" href="../orderDetail/orderDetail.html" class="detailButton">
                             Ver detalle
-                        </button>
+                        </a>
                     </td>
                     <td>
                         <button class="cocinaButton">
@@ -170,9 +226,9 @@
                     <td>No</td>
                     <td>A confirmar</td>
                     <td>
-                        <button class="detailButton">
+                        <a style="font-size: 13px;" href="../orderDetail/orderDetail.html" class="detailButton">
                             Ver detalle
-                        </button>
+                        </a>
                     </td>
                     <td>
                         <button class="cocinaButton">
@@ -197,9 +253,9 @@
                     <td>No</td>
                     <td>A confirmar</td>
                     <td>
-                        <button class="detailButton">
+                        <a style="font-size: 13px;" href="../orderDetail/orderDetail.html" class="detailButton">
                             Ver detalle
-                        </button>
+                        </a>
                     </td>
                     <td>
                         <button class="cocinaButton">
@@ -224,9 +280,9 @@
                     <td>No</td>
                     <td>A confirmar</td>
                     <td>
-                        <button class="detailButton">
+                        <a style="font-size: 13px;" href="../orderDetail/orderDetail.html" class="detailButton">
                             Ver detalle
-                        </button>
+                        </a>
                     </td>
                     <td>
                         <button class="cocinaButton">
