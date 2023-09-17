@@ -126,9 +126,9 @@ Criterios de aceptación:
 
 ## HU #14 - Vista y recepción de pedidos
 
-- [ ] El cajero podrá acceder a una página en donde habrá una grilla con todos los pedidos, su información y su estado.
-- [ ] El cajero podrá filtrar los pedidos por estado mediante un combobox con opciones (A confirmar, En cocina, Listo, En delivery, Entregado).
-- [ ] El cajero podrá buscar un pedido por su id mediante un cuadro de búsqueda.
+- [x] El cajero podrá acceder a una página en donde habrá una grilla con todos los pedidos, su información y su estado.
+- [x] El cajero podrá filtrar los pedidos por estado mediante un combobox con opciones (A confirmar, En cocina, Listo, En delivery, Entregado).
+- [x] El cajero podrá buscar un pedido por su id mediante un cuadro de búsqueda.
 - [ ] Cuando un cliente confirma un pedido, se le asigna de forma predeterminada el estado “A confirmar”.
 
 ## HU #15 - Administración de estado, cobro y entrega de pedido
