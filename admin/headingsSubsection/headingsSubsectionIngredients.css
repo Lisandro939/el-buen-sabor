@@ -1,5 +1,29 @@
-*{
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
     font-family: 'system-ui', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* reset button styles*/
+
+button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
 }
 /*-------------------- HEADER --------------------*/
 
@@ -22,7 +46,7 @@ header button {
 header .center {
     position: absolute;
     top: -12px;
-    left: 45%;
+    left: 41%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,7 +199,7 @@ label input {
 }
 
 .subHeader button {
-    width: 15%;
+    width: 10%;
     font-size: 30px;
     position: relative;
     font-weight: 600;
@@ -198,196 +222,167 @@ label input {
     bottom: -10px;
     left: 40%;
 }
-.barra-de-seleccion{
-    padding: 28px 48px 28px 48px;
+
+/*---------------- TYPE HEADER ------------------*/
+
+.typeSection {
     width: 100vw;
-    flex-shrink: 0;
-    box-sizing: border-box;
+    height: 200px;
     display: flex;
-    width: 100vw;
-    height: 80px;
-    justify-content: space-between;
-    padding-left: 48px;
-    padding-right: 48px;
-    border-bottom: 3px solid black;
-}
-
-.barra-de-seleccion h3{
-   font-size: 22px;
-   font-weight: 550;
-}
-body{
-    margin: auto;
-}
-
-.inputConteiner{
-    display: flex;
-    flex-direction:row-reverse;
-    width: 80vw;
-}
-
-
-.input {
-    position: relative;
-    color: black;
-   
-}
-
-.input input {
-    width: 290px;
-    height: 30px;
-    border: 0px;
-    border-radius: 10px;
-    padding: 0px 10px;
-    outline: none;
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.75);
-    }
-
-    
-.input i {
-    position: absolute;
-    top: 7px;
-    right: 15px;
-    z-index: 99;
-    color: black;
-}
-
-.user {
-    color: white;
-}
-
-/*SECTION PRINCIPAL*/
-
-.titulo{
-    padding-top: 100px;
-    color: black;
-    text-align: center;
-}
-
-.contenedor{
-    background-color: white;
-    padding: 50px;
-    text-align: center;
     flex-direction: row;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    width: 80vw;
-}
-.cabezaTabla{
-    background-color: grey;
-    border-radius: 25px;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
 }
 
-.cabezaTabla tr{
-    background-color: grey;
-    border-radius: 25px;
-    padding: 5px 10px;
+.typeSection button {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 40px;
+    width: 50vw;
+    border-left: 1px solid #000;
 }
+
+.typeSection a {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 40px;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9a9a9a;
+}
+
+/*---------------- MIDDLE SECTION ----------------*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.preTable {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.preTable h2 {
+    margin: 10px 0px;
+}
+
+.preTable select {
+    width: 150px;
+}
+
+.registerShop {
+    background-color: #E1950D;
+    padding: 4px 12px;
+    border-radius: 10px;
+}
+
+.new {
+    background-color: #03fa14;
+    padding: 4px 12px;
+    border-radius: 10px;
+}
+
 table {
-    width:100%;
-    border:0px solid #b3adad;
+    width: 90vw;
     border-collapse:collapse;
     padding:5px;
 }
+
+@media screen and (width < 1100px) {
+    section {
+        overflow-x: scroll;
+        width: 100vw;
+        align-items: start;
+    }
+}
+table tr {
+    border-radius: 10px;
+}
+
+.dangerRow {
+    background-color: #fc9b9b;
+}
 table th {
-    border:0px solid #b3adad;
     padding:5px;
-    background: #f0f0f0;
+    background: #cccccc;
     color: #313030;
+}
+table th:first-child {
+    border-radius: 10px 0px 0px 10px;
+}
+table th:last-child {
+    border-radius: 0px 10px 10px 0px;
 }
 table td {
-    border:0px solid #b3adad;
     text-align:center;
-    padding:5px;
-    background: #ffffff;
-    color: #313030;
+    color: #000000;
+    width: 30vw;
+    padding:10px 5px;
 }
 
-.barra-de-seleccion{
-    padding: 28px 48px 28px 48px;
-    width: 100vw;
-    flex-shrink: 0;
-    box-sizing: border-box;
-    display: flex;
-    width: 100vw;
-    height: 80px;
-    justify-content: space-between;
-    padding-left: 48px;
-    padding-right: 48px;
-    border-bottom: 3px solid black;
-}
-
-.barra-de-seleccion h3{
-    font-size: 22px;
-    font-weight: 550;
- }
-
-
-/*BOTONES*/
-
-.botonNav{
-    background: none;
-    border: none;
-    font-size: 24px; /* Ajusta el tamaño del icono según tus necesidades */
-    cursor: pointer;
-    padding: 0; /* Elimina cualquier relleno adicional */
-    display: inline-block; /* Hace que el botón se ajuste al contenido */
-    line-height: 1; /* Elimina cualquier espacio vertical adicional */
-}
-
-.botones{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    justify-content: space-between;
-}
-
-.boton1{
-    border-radius: 25px;
-    padding: 5px 10px;
+.detailButton {
     background-color: #E1950D;
-    color: black;
-    border: 0px;
-    cursor: pointer;
+    padding: 6px 16px;
+    border-radius: 100px;
+    -webkit-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+    -moz-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+    box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
 }
-
-.boton2{
-    border-radius: 25px;
-    padding: 5px 10px;
-    background-color: #FBFF2B;
-    color: black;
-    border: 0px;
-    cursor: pointer;
-}
-
-.boton3{
-    border-radius: 25px;
-    padding: 5px 10px;
-    background-color: #46FF36;
-    color: black;
-    border: 0px;
-    cursor: pointer;
+.detailButton:hover {
+    background-color: #E1950D;
+    padding: 6px 16px;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(62, 62, 62, 0.5);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+    box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
 }
 
 
 
-.icon-button {
-    background: none;
-    border: none;
-    font-size: 24px; /* Ajusta el tamaño del icono según tus necesidades */
-    cursor: pointer;
-    padding: 0; /* Elimina cualquier relleno adicional */
-    display: inline-block; /* Hace que el botón se ajuste al contenido */
-    line-height: 1; /* Elimina cualquier espacio vertical adicional */
-  }
+.buttonSection {
+    margin-top: 30px;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
-/*FOOTER*/
+.lastButton {
+    width: 100px;
+    background-color: #ffbe4e;
+    padding: 4px 16px;
+    border-radius: 5px;
+    font-weight: 700;
+    -webkit-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+    -moz-box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+    box-shadow: 3px 3px 0px 1px rgba(62, 62, 62, 0.75);
+}
+.lastButton:hover {
+    width: 100px;
+    background-color: #ffbe4e;
+    padding: 4px 16px;
+    border-radius: 5px;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(62, 62, 62, 0.5);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+    box-shadow: 0px 0px 0px 1px rgba(62,62,62,0.50);
+}
+
+/*-------------------- FOOTER --------------------*/
 
 footer {
-    margin: auto;
+    width: 100vw;
     height: 200px;
     background-color: #7D1F2F;
     display: flex;
@@ -417,42 +412,16 @@ footer section a {
     margin-bottom: 10px;
 }
 
-table {
-    border-spacing: 23.5px; /* Ajusta el valor según tus preferencias */
+@media screen and (width < 1200px) {
+    footer {
+        flex-direction: column;
+        height: 100%;
+        width: 100vw;
+        padding: 0px;
+    }
+
+    footer section {
+        width: 70%;
+        align-items: center;
+    }
 }
-
-tr {
-    margin-bottom: 100px; /* Ajusta el valor según tus preferencias */
-}
-
-th {
-    background-color: #ee030300; /* Cambia el color de fondo según tus preferencias */
-    color: black; /* Cambia el color del texto si es necesario */
-    padding: 10px; /* Añade espacio alrededor del contenido del th si es necesario */
-}
- 
-
-
-/* Pedidos
-color: #220114;
-font-size: 32px;
-font-family: Roboto;
-font-weight: 500;
-line-height: 38.40px;
-word-wrap: break-word
----
-// Stock
-color: #220114;
-font-size: 32px;
-font-family: Roboto;
-font-weight: 500;
-line-height: 38.40px;
-word-wrap: break-word
----
-// Rubros
-color: #220114;
-font-size: 32px;
-font-family: Roboto;
-font-weight: 500;
-line-height: 38.40px;
-word-wrap: break-word

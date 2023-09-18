@@ -1,0 +1,486 @@
+.button1 button{
+    width: 110px ;
+    height: 30px;
+    background-color: #E1950D;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(90, 90, 90);
+    transition-duration: 0.4s;
+}
+.button1 button:hover{
+    background-color: #7D1F2F;
+    border: 2px #E1950D;
+    color: #E1950D;
+}
+
+.button2 button{
+    width: 110px ;
+    height: 30px;
+    background-color: #E1950D;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(90, 90, 90);
+    transition-duration: 0.4s;
+}
+.button2 button:hover{
+    background-color: #7D1F2F;
+    border: 10px #E1950D;
+    color: #E1950D;
+}
+
+.container {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------- REGISTRAR COMPRA DE STOCK -------------------*/
+
+.containerCompra {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalRegistrarCompra{
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+.inputsCompra{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputsCompra input{
+    width: 100%;
+    height: 35px;
+    background-color: #e2e1e1;
+    border-radius: 15px;
+    border: 0;
+    font-size: 15px;
+    text-indent: 15px;
+}
+.inputsCompra input:hover{
+    text-decoration-line: underline;
+    text-decoration-color: gray;
+}
+.inputsCompra b{
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-indent: 10px ;
+}
+
+/*----------------Editar/Nuevo Ingrediente------------------*/
+.modalEN_Ingrediente{
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+.tituloIngrediente{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seccionIngrediente{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+}
+.inputsIngrediente{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputsIngrediente input{
+    width: 100%;
+    height: 35px;
+    background-color: #e2e1e1;
+    border-radius: 15px;
+    border: 0;
+    font-size: 15px;
+    text-indent: 15px;
+}
+.inputsIngrediente input:hover{
+    text-decoration-line: underline;
+    text-decoration-color: gray;
+}
+.inputsIngrediente b{
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-indent: 10px ;
+}
+
+.botonesIngrediente{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----------------Editar/Nuevo Producto------------------*/
+.modalEN_Producto{
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 700px;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+.tituloProducto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seccionProducto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+}
+.inputsProducto{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputsProducto input{
+    width: 100%;
+    height: 35px;
+    background-color: #e2e1e1;
+    border-radius: 15px;
+    border: 0;
+    font-size: 15px;
+    text-indent: 15px;
+}
+.inputsProducto input:hover{
+    text-decoration-line: underline;
+    text-decoration-color: gray;
+}
+.inputsProducto b{
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-indent: 10px ;
+}
+.inputsProducto button{
+    width: 100%;
+    height: 35px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+    background-color: #7CB518;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgb(92, 92, 92);
+}
+
+.botonesProducto{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----------------Crear/Modificar Empleado------------------*/
+.modalCM_Empleado{
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 700px;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+.tituloEmpleado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seccionEmpleado{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+}
+.inputsEmpleado{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputsEmpleado input{
+    width: 100%;
+    height: 35px;
+    background-color: #e2e1e1;
+    border-radius: 15px;
+    border: 0;
+    font-size: 15px;
+    text-indent: 15px;
+}
+.inputsEmpleado input:hover{
+    text-decoration-line: underline;
+    text-decoration-color: gray;
+}
+.inputsEmpleado b{
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-indent: 10px ;
+}
+
+.botonesEmpleado{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----------------Crear/Modificar Cliente------------------*/
+.modalCM_Cliente{
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 700px;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+.tituloCliente{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seccionCliente{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+}
+.inputsCliente{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputsCliente input{
+    width: 100%;
+    height: 35px;
+    background-color: #e2e1e1;
+    border-radius: 15px;
+    border: 0;
+    font-size: 15px;
+    text-indent: 15px;
+}
+.inputsCliente input:hover{
+    text-decoration-line: underline;
+    text-decoration-color: gray;
+}
+.inputsCliente b{
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-indent: 10px ;
+}
+
+.botonesCliente{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----------------Crear/Modificar Rubro Ingrediente------------------*/
+.modalCM_RubroI{
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 700px;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+.tituloRubroI{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seccionRubroI{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+}
+.inputsRubroI{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputsRubroI input{
+    width: 100%;
+    height: 35px;
+    background-color: #e2e1e1;
+    border-radius: 15px;
+    border: 0;
+    font-size: 15px;
+    text-indent: 15px;
+}
+.inputsRubroI input:hover{
+    text-decoration-line: underline;
+    text-decoration-color: gray;
+}
+.inputsRubroI b{
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-indent: 10px ;
+}
+
+.botonesRubroI{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----------------Crear/Modificar Rubro Producto------------------*/
+.modalCM_RubroP{
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 700px;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+.tituloRubroP{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seccionRubroP{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+}
+.inputsRubroP{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputsRubroP input{
+    width: 100%;
+    height: 35px;
+    background-color: #e2e1e1;
+    border-radius: 15px;
+    border: 0;
+    font-size: 15px;
+    text-indent: 15px;
+}
+.inputsRubroP input:hover{
+    text-decoration-line: underline;
+    text-decoration-color: gray;
+}
+.inputsRubroP b{
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-indent: 10px ;
+}
+
+.botonesRubroP{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

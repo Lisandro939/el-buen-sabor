@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  type="text/css" rel="stylesheet" href="./stockSubsectionIngredients.css">
+    <link  type="text/css" rel="stylesheet" href="./headingsSubsectionProducts.css">
     <link  type="text/css" rel="stylesheet" href="/styles/modals.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>El buen sabor</title>
@@ -28,7 +28,7 @@
         </div>
         <div class="center">
             <img id="logo" src="../../assets/logoBuenSabor-Naranja.png" width="150px" height="100px"/>
-            <h1>COCINERO</h1>
+            <h1>ADMINISTRADOR</h1>
         </div>
     </header>
     <!-- Modal Mis datos personales -->
@@ -80,132 +80,87 @@
         </div>
     </div>
     <div class="subHeader">
-        <a href="../ordersSubsection/ordersSubsection.html">
-            Pedidos
+        <a href="../usersSubsection/employeeSubsection.html">
+            Usuarios
+        </a>
+        <a href="../stockSubsection/stockSubsectionProducts.html">
+            Stock
+            
         </a>
         <button>
-            Stock
+            Rubros
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle-filled" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M11.99 1.968c1.023 0 1.97 .521 2.512 1.359l.103 .172l7.1 12.25l.062 .126a3 3 0 0 1 -2.568 4.117l-.199 .008h-14l-.049 -.003l-.112 .002a3 3 0 0 1 -2.268 -1.226l-.109 -.16a3 3 0 0 1 -.32 -2.545l.072 -.194l.06 -.125l7.092 -12.233a3 3 0 0 1 2.625 -1.548z" stroke-width="0" fill="currentColor" />
             </svg>
         </button>
-        <a href="../headingsSubsection/headingsSubsectionIngredients.html">
-            Rubros
+        <a href="../statisticsSubsection/monetaryMovements/monetaryMovements.html">
+            Estadísticas
+        </a>
+        <a href="../billingSubsection/orderList/orderList.html">
+            Facturación
         </a>
     </div>
     <div class="typeSection">
-        <a href="./stockSubsectionProducts.html">
-            Productos
-        </a>
         <button>
-            Ingredientes
+            Productos
         </button>
+        <a href="./headingsSubsectionIngredients.html">
+            Ingredientes
+        </a>
     </div>
     <div class="preTable">
         <div class="buttons">
-            <button id="registrar" class="registerShop">
-                Registrar compra
-            </button>
             <button id="nuevo" class="new">
                 Nuevo
             </button>
-        </div>
-        <div>
-            <label for="">
-                Nivel de stock:
-            </label>
-            <select name="" id="">
-                <option value="">Bajo</option>
-                <option value="">Medio</option>
-                <option value="">Alto</option>
-            </select>
         </div>
         <input
             type="search"
             placeholder="Buscar"
         />
     </div>
-    <!--------HU Editar/Nuevo Ingrediente-------->
-    <div id="nuevoIngrediente" class="container">
-        <div class="modalEN_Ingrediente">
-            <div class="tituloIngrediente">
-                <h2>Editar / Nuevo Ingrediente</h2>
+    <div id="nuevoProducto" class="container">
+        <!--------HU Crear/Modificar Rubro Producto-------->
+        <div class="modalCM_RubroP">
+            <div class="tituloRubroP">
+                <h2>Crear / Modificar Rubro Producto</h2>
             </div>
-    
-            <div class="seccionIngrediente">
-                <div class="inputsIngrediente">
-                <b>Nombre</b>
-                <input type="text" placeholder="Ej: Chorizo Colorado"/>
-                <b>Stock Minimo</b>
-                <input type="number" placeholder="Numero"/>
-                <b>Precio de Costo</b>
-                <input type="text" placeholder="Ej: $553,81"/>
-                <b>Estado Alta/Baja</b>
-                <input type="text" placeholder="Alta/Baja">
+            
+            <div class="seccionRubroP">
+                <div class="inputsRubroP">
+                    <b>Nombre</b>
+                    <input type="text" placeholder="Ej: Asado"/>
+                    <b>Estado Alta/Baja</b>
+                    <input type="text" placeholder="Alta/Baja"/>
                 </div>
-    
-                <div class="inputsIngrediente">
-                <b>Rubro</b>
-                <input type="text" placeholder="Ej: Embutidos"/>
-                <b>Stock Actual</b>
-                <input type="number" placeholder="Numero"/>
-                <b>Unidad de Medida</b>
-                <input type="text" placeholder="kg"/>
+            
+                <div class="inputsRubroP">
+                    <b>Rubro Padre</b>
+                    <input type="text" placeholder="Ej: Parrilla"/>
                 </div>
             </div>
-    
-            <div class="botonesIngrediente">
+            
+            <div class="botonesRubroP">
                 <div class="button1"><button>Volver</button></div>
                 <div class="button2"><button>Guardar</button></div>
             </div>
-        </div>
-    </div>
-    <!-------Registrar compra-------------->
-    <div id="registrarCompra" class="containerCompra">
-        <div class="box">
-            <div class="title">
-                <h1><u>Compra de stock</u></h1>
-            </div>
-            <div class="medio">
-                <h3>Ingrediente</h3>
-                <input type="text">
-                <h3>Cantidad</h3>
-                <input type="text">
-                <h3>Precio de costo</h3>
-                <input type="text">
-            </div>
-            <div class="botones">
-                <div class="cancelar"><button>Cancelar</button></div>
-                <div class="nuevo"><button>Nuevo</button></div>
-                <div class="guardar"><button>Guardar</button></div>
-            </div>
-        </div>
+        </div>  
     </div>
     <section>
         <table>
             <thead>
                 <tr>
-                    <th>Ingrediente</th>
                     <th>Rubro</th>
-                    <th>Precio de costo</th>
-                    <th>Stock minimo</th>
-                    <th>Stock anual</th>
-                    <th>Unidad de medida</th>
-                    <th>Nivel de stock</th>
+                    <th>Rubro padre</th>
                     <th>Estado</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Chorizo colorado</td>
-                    <td>Embutidos</td>
-                    <td>$500</td>
-                    <td>10</td>
-                    <td>9</td>
-                    <td>kg</td>
-                    <td>Óptimo</td>
+                    <td>Parrilla</td>
+                    <td>Barbacoa</td>
                     <td>Alta</td>
                     <td>
                         <button>
@@ -225,13 +180,8 @@
                     </td>
                 </tr>
                 <tr class="dangerRow">
-                    <td>Chorizo colorado</td>
-                    <td>Embutidos</td>
-                    <td>$500</td>
-                    <td>10</td>
-                    <td>2</td>
-                    <td>kg</td>
-                    <td>Pedir</td>
+                    <td>Parrilla</td>
+                    <td>Barbacoa</td>
                     <td>Baja</td>
                     <td>
                         <button>
@@ -251,13 +201,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Chorizo colorado</td>
-                    <td>Embutidos</td>
-                    <td>$500</td>
-                    <td>10</td>
-                    <td>6</td>
-                    <td>kg</td>
-                    <td>Óptimo</td>
+                    <td>Parrilla</td>
+                    <td>Barbacoa</td>
                     <td>Alta</td>
                     <td>
                         <button>
@@ -277,13 +222,8 @@
                     </td>
                 </tr>
                 <tr class="dangerRow">
-                    <td>Chorizo colorado</td>
-                    <td>Embutidos</td>
-                    <td>$500</td>
-                    <td>10</td>
-                    <td>1</td>
-                    <td>kg</td>
-                    <td>Pedir</td>
+                    <td>Parrilla</td>
+                    <td>Barbacoa</td>
                     <td>Baja</td>
                     <td>
                         <button>
@@ -303,13 +243,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Chorizo colorado</td>
-                    <td>Embutidos</td>
-                    <td>$500</td>
-                    <td>10</td>
-                    <td>8</td>
-                    <td>kg</td>
-                    <td>Óptimo</td>
+                    <td>Parrilla</td>
+                    <td>Barbacoa</td>
                     <td>Alta</td>
                     <td>
                         <button>
@@ -329,13 +264,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Chorizo colorado</td>
-                    <td>Embutidos</td>
-                    <td>$500</td>
-                    <td>10</td>
-                    <td>10</td>
-                    <td>kg</td>
-                    <td>Óptimo</td>
+                    <td>Parrilla</td>
+                    <td>Barbacoa</td>
                     <td>Alta</td>
                     <td>
                         <button>
@@ -355,13 +285,8 @@
                     </td>
                 </tr>
                 <tr class="dangerRow">
-                    <td>Chorizo colorado</td>
-                    <td>Embutidos</td>
-                    <td>$500</td>
-                    <td>10</td>
-                    <td>0</td>
-                    <td>kg</td>
-                    <td>Faltante</td>
+                    <td>Parrilla</td>
+                    <td>Barbacoa</td>
                     <td>Baja</td>
                     <td>
                         <button>
@@ -381,13 +306,8 @@
                     </td>
                 </tr>
                 <tr class="dangerRow">
-                    <td>Chorizo colorado</td>
-                    <td>Embutidos</td>
-                    <td>$500</td>
-                    <td>10</td>
-                    <td>4</td>
-                    <td>kg</td>
-                    <td>Pedir</td>
+                    <td>Parrilla</td>
+                    <td>Barbacoa</td>
                     <td>Baja</td>
                     <td>
                         <button>
@@ -426,6 +346,6 @@
             <a style="color: #7D1F2F;">BOOOCA BOCA BOCAA</a>
         </section>
     </footer>
-<script src="./stockSubsectionIngredients.js"></script>
+<script src="./headingsSubsectionProducts.js"></script>
 </body>
 </html>
