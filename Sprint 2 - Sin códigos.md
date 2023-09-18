@@ -13,22 +13,22 @@ Desde ya, pedimos disculpas si algún botón no funciona y si algún linkeo entr
 
 ### Retrospectiva
 
-##### ¿Qué debemos conservar?
+#### ¿Qué debemos conservar?
 
-- Debemos conservar el apoyarnos en Jira para una mejor organización de las tareas.
+- Debemos conservar el apoyarnos en Jira para una buena organización de las tareas.
 
-##### ¿Con qué debemos detenernos?
+#### ¿Con qué debemos detenernos?
 
-- 
+- Debemos dejar de escribir mensajes en los commit que no tengan mucho sentido con el commit en sí.
 
-##### ¿Por dónde debemos empezar?
+#### ¿Por dónde debemos empezar?
 
 - Deberíamos empezar a hacer actualizaciones del estado en el que se encuentra cada integrante en el trabajo.
 
-##### ¿De qué deberíamos hacer más?
+#### ¿De qué deberíamos hacer más?
 
 - Hablar mas entre los integrantes del grupo para una mejor coordinación en terminos de tener el código homogeneizado.
 
-##### ¿Qué deberíamos hacer menos?
+#### ¿Qué deberíamos hacer menos?
 
-- 
+- Deberíamos dejar de hacer commits extensos con muchos cambios, en vez de eso, tendríamos que hacer commits más cortos y con más frecuencia.
