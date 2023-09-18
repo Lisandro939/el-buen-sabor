@@ -8,34 +8,166 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="usersSubsection.css">
+    <link rel="stylesheet" type="text/css" href="/styles/modals.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
  </head>
  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <header class="header">
-        <a href="productos.html"><img src="/el-buen-sabor/assets/logoBuenSaborTriangulo.svg"></a>
-        <h1>ADMINISTRADOR</h1>
+    <header>
+        <div>
+            <button id="button">
+                <svg width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                </svg>
+                <div id="miModal" class="modalcito">
+                    <div>
+                        <a id="abrirModalMisDatosPersonales">Mis datos personales</a>
+                        <a href="/selectUser.html">Salir</a>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <div class="center">
+            <img id="logo" src="../../assets/logoBuenSabor-Naranja.png" width="150px" height="100px"/>
+            <h1>ADMINISTRADOR</h1>
+        </div>
     </header>
+   <!-- Modal Mis datos personales -->
+   <div id="misDatosPersonales" class="modalMisDatosPersonales">   
+    <div class="modalContenidoMisDatosPersonales">
+        <h2>Mis datos personales</h2>
+        <section>
+            <div class="firstData">
+                <label>
+                    Nombre
+                    <input type="text" placeholder="Francisco"/>
+                </label>
+                <label>
+                    Telefono
+                    <input type="text" placeholder="123456789"/>
+                </label>
+                <label>
+                    Contraseña
+                    <input type="password" placeholder="********"/>
+                </label>
+                <label>
+                    Dirección
+                    <input type="text" placeholder="Calle 123"/>
+                </label>
+            </div>
+            <div class="secondData">
+                <label>
+                    Apellido
+                    <input type="text" placeholder="Manuel"/>
+                </label>
+                <label>
+                    Email
+                    <input type="email" placeholder="franciscomanuel@gmail.com" />
+                </label>
+                <label>
+                    Fecha de nacimiento
+                    <input type="date" placeholder="01/01/2000"/>
+                </label>
+                <label>
+                    Departamento
+                    <input type="text" placeholder="Mendoza"/>
+                </label>
+            </div>
+        </section>
+        <div class="buttonContainerMisDatosPersonales">
+            <button>Volver</button>
+            <button>Guardar</button>
+        </div>
+    </div>
     
-    <section class="barra-de-seleccion">      
-        <h3>Usuarios</h3>
-        <h3>Stock</h3>
-        <h3>Rubros</h3>
-        <h3>Estadistica</h3>
-        <h3>Facturacion</h3>
-    </section>
-
-    <section class="selector-empleados-cliente">
-        <h2 class="linea"><a href="employeeSubsection.html" class="black">Empleados</a></h2>
-        <h2><a href="clientSubsection.html">Clientes</a></h2>
-    </section>
-
-    <section class="btn-buscador">
-        <button class="btn">Nuevo</button>
-        <input type="search" class="buscador" placeholder="Buscar"></input>
-    </section>
-
+    </div>
+    <div class="subHeader">
+        <button>
+            Usuarios
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle-filled" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M11.99 1.968c1.023 0 1.97 .521 2.512 1.359l.103 .172l7.1 12.25l.062 .126a3 3 0 0 1 -2.568 4.117l-.199 .008h-14l-.049 -.003l-.112 .002a3 3 0 0 1 -2.268 -1.226l-.109 -.16a3 3 0 0 1 -.32 -2.545l.072 -.194l.06 -.125l7.092 -12.233a3 3 0 0 1 2.625 -1.548z" stroke-width="0" fill="currentColor" />
+            </svg>
+        </button>
+        <a href="../stockSubsection/stockSubsectionIngredients.html">
+            Stock
+        </a>
+        <a href="../headingsSubsection/productos.html">
+            Rubros
+            
+        </a>
+        <a href="../statisticsSubsection/monetaryMovements/monetaryMovements.html">
+            Estadísticas
+        </a>
+        <a href="../billingSubsection/orderList/orderList.html">
+            Facturación
+        </a>
+    </div>
+    <div class="typeSection">
+        <button style="border-right: 1px solid black;">
+            Empleados
+        </button>
+        <a style="text-decoration: none;" href="./clientSubsection.html">
+            Clientes
+        </a>
+    </div>
+    
+    <div class="preTable">
+        <div class="buttons">
+            <button id="nuevoEmpleado" class="newButton">
+                Nuevo
+            </button>
+        </div>
+        <input
+            type="search"
+            placeholder="Buscar"
+        />
+    </div>
+    <!--------HU Crear/Modificar Empleado-------->
+    <div id="modalNuevoEmpleado" class="container">
+        <div class="modalCM_Empleado">
+            <div class="tituloEmpleado">
+                <h2>Crear / Modificar Empleado</h2>
+            </div>
+    
+            <div class="seccionEmpleado">
+                <div class="inputsEmpleado">
+                <b>Nombre</b>
+                <input type="text" placeholder="Ej: Facundo Ezequiel"/>
+                <b>Telefono</b>
+                <input type="text" placeholder="Ej: +542612685796"/>
+                <b>Direccion</b>
+                <input type="text" placeholder="Ej: Padre Vazquez 456"/>
+                <b>Clave Provisoria</b>
+                <input type="password" placeholder="Clave Provisoria">
+                <b>Confirmar Clave Provisoria</b>
+                <input type="password" placeholder="Clave Provisoria">
+                </div>
+    
+                <div class="inputsEmpleado">
+                <b>Apellido</b>
+                <input type="text" placeholder="Ej: Espinola"/>
+                <b>Correo Electronico</b>
+                <input type="text" placeholder="Ej: example@gmail.com"/>
+                <b>Departamento / Localidad</b>
+                <input type="text" placeholder="Departamento / Localidad"/>
+                <b>Rol</b>
+                <input type="text" placeholder="Cajero"/>
+                </div>
+            </div>
+    
+            <div class="botonesEmpleado">
+                <div class="button1">
+                    <button style="background-color: #7D1F2F;">Dar de Baja</button>
+                    <button style="background-color: #7CB518;">Dar de Alta</button>
+                </div>
+                <div class="button2"><button>Guardar</button></div>
+            </div>
+        </div>
+    </div>
+    
     
     <section class="tabla">
         <table class="table">
@@ -58,7 +190,22 @@
                     <td>San Martin 654</td>
                     <td>Ciudad</td>
                     <td>Activo</td>
-                    <td><img src="/el-buen-sabor/assets/Pencil.png"><img src="/el-buen-sabor/assets/Bin.png"></td>
+                    <td>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                                <path d="M13.5 6.5l4 4" />
+                            </svg>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash-x-filled" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M20 6a1 1 0 0 1 .117 1.993l-.117 .007h-.081l-.919 11a3 3 0 0 1 -2.824 2.995l-.176 .005h-8c-1.598 0 -2.904 -1.249 -2.992 -2.75l-.005 -.167l-.923 -11.083h-.08a1 1 0 0 1 -.117 -1.993l.117 -.007h16zm-9.489 5.14a1 1 0 0 0 -1.218 1.567l1.292 1.293l-1.292 1.293l-.083 .094a1 1 0 0 0 1.497 1.32l1.293 -1.292l1.293 1.292l.094 .083a1 1 0 0 0 1.32 -1.497l-1.292 -1.293l1.292 -1.293l.083 -.094a1 1 0 0 0 -1.497 -1.32l-1.293 1.292l-1.293 -1.292l-.094 -.083z" stroke-width="0" fill="currentColor" />
+                                <path d="M14 2a2 2 0 0 1 2 2a1 1 0 0 1 -1.993 .117l-.007 -.117h-4l-.007 .117a1 1 0 0 1 -1.993 -.117a2 2 0 0 1 1.85 -1.995l.15 -.005h4z" stroke-width="0" fill="currentColor" />
+                            </svg>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Mariano Lucero</td>
@@ -67,7 +214,22 @@
                     <td>San Martin 654</td>
                     <td>Ciudad</td>
                     <td>Activo</td>
-                    <td><img src="/el-buen-sabor/assets/Pencil.png"><img src="/el-buen-sabor/assets/Bin.png"></td>
+                    <td>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                                <path d="M13.5 6.5l4 4" />
+                            </svg>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash-x-filled" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M20 6a1 1 0 0 1 .117 1.993l-.117 .007h-.081l-.919 11a3 3 0 0 1 -2.824 2.995l-.176 .005h-8c-1.598 0 -2.904 -1.249 -2.992 -2.75l-.005 -.167l-.923 -11.083h-.08a1 1 0 0 1 -.117 -1.993l.117 -.007h16zm-9.489 5.14a1 1 0 0 0 -1.218 1.567l1.292 1.293l-1.292 1.293l-.083 .094a1 1 0 0 0 1.497 1.32l1.293 -1.292l1.293 1.292l.094 .083a1 1 0 0 0 1.32 -1.497l-1.292 -1.293l1.292 -1.293l.083 -.094a1 1 0 0 0 -1.497 -1.32l-1.293 1.292l-1.293 -1.292l-.094 -.083z" stroke-width="0" fill="currentColor" />
+                                <path d="M14 2a2 2 0 0 1 2 2a1 1 0 0 1 -1.993 .117l-.007 -.117h-4l-.007 .117a1 1 0 0 1 -1.993 -.117a2 2 0 0 1 1.85 -1.995l.15 -.005h4z" stroke-width="0" fill="currentColor" />
+                            </svg>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Mariano Lucero</td>
@@ -76,7 +238,22 @@
                     <td>San Martin 654</td>
                     <td>Ciudad</td>
                     <td>Activo</td>
-                    <td><img src="/el-buen-sabor/assets/Pencil.png"><img src="/el-buen-sabor/assets/Bin.png"></td>
+                    <td>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                                <path d="M13.5 6.5l4 4" />
+                            </svg>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash-x-filled" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M20 6a1 1 0 0 1 .117 1.993l-.117 .007h-.081l-.919 11a3 3 0 0 1 -2.824 2.995l-.176 .005h-8c-1.598 0 -2.904 -1.249 -2.992 -2.75l-.005 -.167l-.923 -11.083h-.08a1 1 0 0 1 -.117 -1.993l.117 -.007h16zm-9.489 5.14a1 1 0 0 0 -1.218 1.567l1.292 1.293l-1.292 1.293l-.083 .094a1 1 0 0 0 1.497 1.32l1.293 -1.292l1.293 1.292l.094 .083a1 1 0 0 0 1.32 -1.497l-1.292 -1.293l1.292 -1.293l.083 -.094a1 1 0 0 0 -1.497 -1.32l-1.293 1.292l-1.293 -1.292l-.094 -.083z" stroke-width="0" fill="currentColor" />
+                                <path d="M14 2a2 2 0 0 1 2 2a1 1 0 0 1 -1.993 .117l-.007 -.117h-4l-.007 .117a1 1 0 0 1 -1.993 -.117a2 2 0 0 1 1.85 -1.995l.15 -.005h4z" stroke-width="0" fill="currentColor" />
+                            </svg>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Mariano Lucero</td>
@@ -85,7 +262,22 @@
                     <td>San Martin 654</td>
                     <td>Ciudad</td>
                     <td>Activo</td>
-                    <td><img src="/el-buen-sabor/assets/Pencil.png"><img src="/el-buen-sabor/assets/Bin.png"></td>
+                    <td>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                                <path d="M13.5 6.5l4 4" />
+                            </svg>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash-x-filled" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M20 6a1 1 0 0 1 .117 1.993l-.117 .007h-.081l-.919 11a3 3 0 0 1 -2.824 2.995l-.176 .005h-8c-1.598 0 -2.904 -1.249 -2.992 -2.75l-.005 -.167l-.923 -11.083h-.08a1 1 0 0 1 -.117 -1.993l.117 -.007h16zm-9.489 5.14a1 1 0 0 0 -1.218 1.567l1.292 1.293l-1.292 1.293l-.083 .094a1 1 0 0 0 1.497 1.32l1.293 -1.292l1.293 1.292l.094 .083a1 1 0 0 0 1.32 -1.497l-1.292 -1.293l1.292 -1.293l.083 -.094a1 1 0 0 0 -1.497 -1.32l-1.293 1.292l-1.293 -1.292l-.094 -.083z" stroke-width="0" fill="currentColor" />
+                                <path d="M14 2a2 2 0 0 1 2 2a1 1 0 0 1 -1.993 .117l-.007 -.117h-4l-.007 .117a1 1 0 0 1 -1.993 -.117a2 2 0 0 1 1.85 -1.995l.15 -.005h4z" stroke-width="0" fill="currentColor" />
+                            </svg>
+                        </button>
+                    </td>
                 </tr>
                 <tr class="table-danger">
                     <td>Mariano Lucero</td>
@@ -94,7 +286,22 @@
                     <td>San Martin 654</td>
                     <td>Ciudad</td>
                     <td>Baja</td>
-                    <td><img src="/el-buen-sabor/assets/Pencil.png"><img src="/el-buen-sabor/assets/Bin.png"></td>
+                    <td>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                                <path d="M13.5 6.5l4 4" />
+                            </svg>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash-x-filled" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M20 6a1 1 0 0 1 .117 1.993l-.117 .007h-.081l-.919 11a3 3 0 0 1 -2.824 2.995l-.176 .005h-8c-1.598 0 -2.904 -1.249 -2.992 -2.75l-.005 -.167l-.923 -11.083h-.08a1 1 0 0 1 -.117 -1.993l.117 -.007h16zm-9.489 5.14a1 1 0 0 0 -1.218 1.567l1.292 1.293l-1.292 1.293l-.083 .094a1 1 0 0 0 1.497 1.32l1.293 -1.292l1.293 1.292l.094 .083a1 1 0 0 0 1.32 -1.497l-1.292 -1.293l1.292 -1.293l.083 -.094a1 1 0 0 0 -1.497 -1.32l-1.293 1.292l-1.293 -1.292l-.094 -.083z" stroke-width="0" fill="currentColor" />
+                                <path d="M14 2a2 2 0 0 1 2 2a1 1 0 0 1 -1.993 .117l-.007 -.117h-4l-.007 .117a1 1 0 0 1 -1.993 -.117a2 2 0 0 1 1.85 -1.995l.15 -.005h4z" stroke-width="0" fill="currentColor" />
+                            </svg>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <td>Mariano Lucero</td>
@@ -103,7 +310,22 @@
                     <td>San Martin 654</td>
                     <td>Ciudad</td>
                     <td>Activo</td>
-                    <td><img src="/el-buen-sabor/assets/Pencil.png"><img src="/el-buen-sabor/assets/Bin.png"></td>
+                    <td>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
+                                <path d="M13.5 6.5l4 4" />
+                            </svg>
+                        </button>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash-x-filled" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M20 6a1 1 0 0 1 .117 1.993l-.117 .007h-.081l-.919 11a3 3 0 0 1 -2.824 2.995l-.176 .005h-8c-1.598 0 -2.904 -1.249 -2.992 -2.75l-.005 -.167l-.923 -11.083h-.08a1 1 0 0 1 -.117 -1.993l.117 -.007h16zm-9.489 5.14a1 1 0 0 0 -1.218 1.567l1.292 1.293l-1.292 1.293l-.083 .094a1 1 0 0 0 1.497 1.32l1.293 -1.292l1.293 1.292l.094 .083a1 1 0 0 0 1.32 -1.497l-1.292 -1.293l1.292 -1.293l.083 -.094a1 1 0 0 0 -1.497 -1.32l-1.293 1.292l-1.293 -1.292l-.094 -.083z" stroke-width="0" fill="currentColor" />
+                                <path d="M14 2a2 2 0 0 1 2 2a1 1 0 0 1 -1.993 .117l-.007 -.117h-4l-.007 .117a1 1 0 0 1 -1.993 -.117a2 2 0 0 1 1.85 -1.995l.15 -.005h4z" stroke-width="0" fill="currentColor" />
+                            </svg>
+                        </button>
+                    </td>
                 </tr>
                 
             </tbody>
@@ -111,7 +333,7 @@
     </section>
     
     <footer>
-            <img id="logoFooter" src="/el-buen-sabor/assets/logo.png"/>
+            <img id="logoFooter" src="/assets/logo.png"/>
     
             <section>
                 <h4>REDES SOCIALES</h4>
@@ -129,5 +351,6 @@
             </section>
         </footer>
     </section>
+    <script src="./usersSubsection.js"></script>
  </body>
 </html>

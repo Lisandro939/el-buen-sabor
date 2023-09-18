@@ -25,7 +25,6 @@ button {
     background-color: inherit;
     cursor: pointer;
 }
-
 /*-------------------- HEADER --------------------*/
 
 header {
@@ -241,6 +240,7 @@ label input {
     font-weight: 700;
     font-size: 40px;
     width: 50vw;
+    border-left: 1px solid #000;
 }
 
 .typeSection a {
@@ -249,13 +249,9 @@ label input {
     font-size: 40px;
     width: 50vw;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: #9a9a9a;
-}
-
-.typeSection button:last-child {
-    border-left: 1px solid #000;
 }
 
 /*---------------- MIDDLE SECTION ----------------*/
